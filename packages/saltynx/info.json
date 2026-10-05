@@ -1,0 +1,11 @@
+{
+ "title": "SaltyNX",
+ "description": "Sysmodule for injecting custom code into Nintendo Switch games.",
+ "author": "masagrator",
+ "version": "2.1.2",
+ "license": "",
+ "url": "https://github.com/masagrator/SaltyNX",
+ "category": "advanced",
+ "details": "Custom store package for SaltyNX.",
+ "changelog": ""
+}
