@@ -1,0 +1,28 @@
+{
+  "package": "sys-patch",
+  "info": {
+    "title": "sys-patch",
+    "author": "impeeza",
+    "category": "advanced",
+    "version": "1.6.2.3",
+    "url": "https://github.com/impeeza/sys-patch",
+    "license": "GPL-2.0",
+    "description": "Runtime patching sysmodule for Atmosphere.",
+    "details": "Applies FS, ES, loader and related runtime patches during boot.",
+    "binary": false
+  },
+  "changelog": "",
+  "assets": [
+    {
+      "url": "https://github.com/impeeza/sys-patch/releases/download/v1.6.2.3/sys-patch-v1.6.2.3.zip",
+      "type": "zip",
+      "zip": [
+        {
+          "path": "/**/*",
+          "dest": "/",
+          "type": "update"
+        }
+      ]
+    }
+  ]
+}

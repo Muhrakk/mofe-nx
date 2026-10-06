@@ -67,5 +67,36 @@
     "asset_regex": "^Status-Monitor-Deux.*\\.zip$",
     "asset_type": "zip",
     "expected_files": []
+  },
+  "sys-patch": {
+    "github": "impeeza/sys-patch",
+    "pkgbuild": "packages/sys-patch/pkgbuild.json",
+    "strip_v": true,
+    "asset_regex": "^sys-patch-v.*\\.zip$",
+    "asset_type": "zip",
+    "expected_files": []
+  },
+  "sys-con": {
+    "github": "o0Zz/sys-con",
+    "pkgbuild": "packages/sys-con/pkgbuild.json",
+    "strip_v": true,
+    "asset_regex": "^sys-con-.*\\.zip$",
+    "asset_type": "zip",
+    "expected_files": []
+  },
+  "nx-fancontrol": {
+    "github": "dominatorul/NX-FanControl",
+    "pkgbuild": "packages/nx-fancontrol/pkgbuild.json",
+    "strip_v": true,
+    "asset_regex": "^.*\\.zip$",
+    "asset_type": "zip",
+    "expected_files": []
+  },
+  "reversenx-rt": {
+    "github": "ppkantorski/ReverseNX-RT",
+    "pkgbuild": "packages/reversenx-rt/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "ReverseNX-RT-ovl.ovl",
+    "asset_type": "file"
   }
 }

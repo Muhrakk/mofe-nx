@@ -1,0 +1,11 @@
+{
+ "title": "ReverseNX-RT",
+ "description": "Real-time handheld and docked-mode switching overlay.",
+ "author": "ppkantorski",
+ "version": "2.2.1+r1",
+ "license": "MIT",
+ "url": "https://github.com/ppkantorski/ReverseNX-RT",
+ "category": "tool",
+ "details": "libultrahand rebuild of ReverseNX-RT.",
+ "changelog": ""
+}

@@ -1,0 +1,28 @@
+{
+  "package": "nx-fancontrol",
+  "info": {
+    "title": "NX-FanControl",
+    "author": "dominatorul",
+    "category": "advanced",
+    "version": "1.0.5+",
+    "url": "https://github.com/dominatorul/NX-FanControl",
+    "license": "MIT",
+    "description": "Custom fan-curve control for Nintendo Switch.",
+    "details": "Fan-control sysmodule and overlay.",
+    "binary": false
+  },
+  "changelog": "",
+  "assets": [
+    {
+      "url": "https://github.com/dominatorul/NX-FanControl/releases/download/1.0.5%2B/NXFanControl.zip",
+      "type": "zip",
+      "zip": [
+        {
+          "path": "/**/*",
+          "dest": "/",
+          "type": "update"
+        }
+      ]
+    }
+  ]
+}

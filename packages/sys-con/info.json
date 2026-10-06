@@ -1,0 +1,11 @@
+{
+ "title": "sys-con",
+ "description": "USB controller support sysmodule for Nintendo Switch.",
+ "author": "o0Zz",
+ "version": "2.0.0",
+ "license": "MIT",
+ "url": "https://github.com/o0Zz/sys-con",
+ "category": "advanced",
+ "details": "Adds support for many USB HID and XInput controllers.",
+ "changelog": ""
+}
