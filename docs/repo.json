@@ -1,6 +1,28 @@
 {
  "packages": [
   {
+   "name": "missioncontrol",
+   "title": "MissionControl",
+   "description": "Use controllers from other consoles natively on Nintendo Switch via Bluetooth.",
+   "author": "ndeadly",
+   "version": "0.16.0",
+   "license": "GPL-2.0",
+   "url": "https://github.com/ndeadly/MissionControl",
+   "category": "advanced",
+   "details": "MissionControl sysmodule by ndeadly.",
+   "changelog": "",
+   "filesize": 200,
+   "extracted": 223,
+   "md5": "99d2f160ac2968e481fd45518bd1f81c",
+   "sha256": "46f9013016ef40c06f715339002e8679439353f888225bb78ec7c71b09a1d883",
+   "updated": "06/10/2026",
+   "appCreated": "06/10/2026",
+   "binary": "none",
+   "screens": 0,
+   "web_dls": -1,
+   "app_dls": -1
+  },
+  {
    "name": "saltynx",
    "title": "SaltyNX",
    "description": "Sysmodule for injecting custom code into Nintendo Switch games.",

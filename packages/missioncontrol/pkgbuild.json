@@ -1,0 +1,28 @@
+{
+  "package": "missioncontrol",
+  "info": {
+    "title": "MissionControl",
+    "author": "ndeadly",
+    "category": "advanced",
+    "version": "0.16.0",
+    "url": "https://github.com/ndeadly/MissionControl",
+    "license": "GPL-2.0",
+    "description": "Use controllers from other consoles natively on Nintendo Switch via Bluetooth.",
+    "details": "MissionControl sysmodule by ndeadly.",
+    "binary": false
+  },
+  "changelog": "",
+  "assets": [
+    {
+      "url": "https://github.com/ndeadly/MissionControl/releases/download/v0.16.0/MissionControl-0.16.0-master-71bbe2d4.zip",
+      "type": "zip",
+      "zip": [
+        {
+          "path": "/**/*",
+          "dest": "/",
+          "type": "update"
+        }
+      ]
+    }
+  ]
+}

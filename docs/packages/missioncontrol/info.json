@@ -1,0 +1,11 @@
+{
+ "title": "MissionControl",
+ "description": "Use controllers from other consoles natively on Nintendo Switch via Bluetooth.",
+ "author": "ndeadly",
+ "version": "0.16.0",
+ "license": "GPL-2.0",
+ "url": "https://github.com/ndeadly/MissionControl",
+ "category": "advanced",
+ "details": "MissionControl sysmodule by ndeadly.",
+ "changelog": ""
+}
