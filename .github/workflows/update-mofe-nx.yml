@@ -38,21 +38,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Check SaltyNX upstream
-        id: saltynx
-        run: python scripts/update_saltynx.py
-        
-      - name: Check MissionControl upstream
-        id: missioncontrol
-        run: python scripts/update_missioncontrol.py
-
+      - name: Check upstream packages
+        id: packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_packages.py
+ 
       - name: Decide whether to build
         id: decision
         shell: bash
         run: |
           if [[ \
-            "${{ steps.saltynx.outputs.changed }}" == "true" || \
-            "${{ steps.missioncontrol.outputs.changed }}" == "true" || \
+            "${{ steps.packages.outputs.changed }}" == "true" || \
             "${{ github.event.inputs.force_rebuild }}" == "true" \
           ]]; then
             echo "build=true" >> "$GITHUB_OUTPUT"
@@ -72,7 +69,7 @@ jobs:
         if: steps.decision.outputs.build == 'true'
         working-directory: packages
         run: |
-          python ../spinarak/spinarak.py saltynx missioncontrol
+          python ../spinarak/spinarak.py ${{ steps.packages.outputs.package_names }}
 
       - name: Validate generated repository
         if: steps.decision.outputs.build == 'true'
@@ -93,7 +90,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add packages/saltynx/pkgbuild.json packages/missioncontrol/pkgbuild.json docs/
+          git add package_sources.json packages/ docs/
 
           if git diff --cached --quiet; then
             echo "No repository changes need committing."
