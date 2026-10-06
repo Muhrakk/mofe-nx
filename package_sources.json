@@ -27,13 +27,5 @@
       "atmosphere/contents/010000000000bd00/flags/boot2.flag",
       "config/MissionControl/missioncontrol.ini.template"
     ]
-  },
-
-  "jksv": {
-    "github": "J-D-K/JKSV",
-    "pkgbuild": "packages/jksv/pkgbuild.json",
-    "strip_v": false,
-    "asset_exact": "JKSV.nro",
-    "asset_type": "file"
   }
 }
