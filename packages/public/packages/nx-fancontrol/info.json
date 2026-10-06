@@ -1,0 +1,11 @@
+{
+ "title": "NX-FanControl",
+ "description": "Custom fan-curve control for Nintendo Switch.",
+ "author": "dominatorul",
+ "version": "1.0.5+",
+ "license": "MIT",
+ "url": "https://github.com/dominatorul/NX-FanControl",
+ "category": "advanced",
+ "details": "Fan-control sysmodule and overlay.",
+ "changelog": ""
+}
