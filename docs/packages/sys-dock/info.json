@@ -1,0 +1,11 @@
+{
+ "title": "sys-dock",
+ "description": "Docked display patching sysmodule for Nintendo Switch.",
+ "author": "masagrator",
+ "version": "1.0.2",
+ "license": "",
+ "url": "https://github.com/masagrator/sys-dock",
+ "category": "advanced",
+ "details": "Provides docked display patches used with tools such as FPSLocker.",
+ "changelog": ""
+}

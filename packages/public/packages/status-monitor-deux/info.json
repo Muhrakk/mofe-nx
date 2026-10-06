@@ -1,0 +1,11 @@
+{
+ "title": "Status Monitor Deux",
+ "description": "Highly configurable system monitoring overlay.",
+ "author": "masagrator",
+ "version": "0.2.1",
+ "license": "GPL-2.0",
+ "url": "https://github.com/masagrator/Status-Monitor-Deux",
+ "category": "tool",
+ "details": "Status Monitor Deux overlay and configuration files.",
+ "changelog": ""
+}
