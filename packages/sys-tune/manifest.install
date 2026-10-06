@@ -1,0 +1,17 @@
+U: switch/.overlays/sys-tune-overlay.ovl
+U: config/sys-tune/lang/de.json
+U: config/sys-tune/lang/en.json
+U: config/sys-tune/lang/es.json
+U: config/sys-tune/lang/fr.json
+U: config/sys-tune/lang/it.json
+U: config/sys-tune/lang/ja.json
+U: config/sys-tune/lang/ko.json
+U: config/sys-tune/lang/nl.json
+U: config/sys-tune/lang/pl.json
+U: config/sys-tune/lang/pt.json
+U: config/sys-tune/lang/ru.json
+U: config/sys-tune/lang/uk.json
+U: config/sys-tune/lang/zh-cn.json
+U: config/sys-tune/lang/zh-tw.json
+U: atmosphere/contents/4200000000000000/exefs.nsp
+U: atmosphere/contents/4200000000000000/toolbox.json

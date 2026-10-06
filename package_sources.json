@@ -98,5 +98,17 @@
     "strip_v": true,
     "asset_exact": "ReverseNX-RT-ovl.ovl",
     "asset_type": "file"
+  },
+  "sys-tune": {
+    "github": "ppkantorski/sys-tune",
+    "pkgbuild": "packages/sys-tune/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "sdout.zip",
+    "asset_type": "zip",
+    "expected_files": [
+    "switch/.overlays/sys-tune-overlay.ovl",
+    "atmosphere/contents/4200000000000000/exefs.nsp",
+    "atmosphere/contents/4200000000000000/toolbox.json"
+    ]
   }
 }

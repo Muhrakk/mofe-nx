@@ -1,0 +1,28 @@
+{
+  "package": "sys-tune",
+  "info": {
+    "title": "sys-tune",
+    "author": "ppkantorski / HookedBehemoth",
+    "category": "advanced",
+    "version": "2.1.0+r3",
+    "url": "https://github.com/ppkantorski/sys-tune",
+    "license": "GPL-2.0",
+    "description": "Background audio player for Nintendo Switch.",
+    "details": "libultrahand rebuild of sys-tune with an Ultrahand-compatible music overlay.",
+    "binary": false
+  },
+  "changelog": "",
+  "assets": [
+    {
+      "url": "https://github.com/ppkantorski/sys-tune/releases/download/v2.1.0%2Br3/sdout.zip",
+      "type": "zip",
+      "zip": [
+        {
+          "path": "/**/*",
+          "dest": "/",
+          "type": "update"
+        }
+      ]
+    }
+  ]
+}
