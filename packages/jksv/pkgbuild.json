@@ -1,0 +1,22 @@
+{
+  "package": "jksv",
+  "info": {
+    "title": "JKSV",
+    "author": "J-D-K",
+    "category": "tool",
+    "version": "12/02/2025",
+    "url": "https://github.com/J-D-K/JKSV",
+    "license": "GPL-3.0",
+    "description": "Nintendo Switch save-data manager.",
+    "details": "Save backup, restore, and management utility.",
+    "binary": "/switch/JKSV.nro"
+  },
+  "changelog": "",
+  "assets": [
+    {
+      "url": "https://github.com/J-D-K/JKSV/releases/download/12/02/2025/JKSV.nro",
+      "type": "update",
+      "dest": "/switch/JKSV.nro"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "saltynx": {
+    "github": "masagrator/SaltyNX",
+    "pkgbuild": "packages/saltynx/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "SaltyNX.zip",
+    "asset_type": "zip",
+    "expected_files": [
+      "SaltySD/saltynx_core.elf",
+      "SaltySD/saltynx_core32.elf",
+      "atmosphere/contents/0000000000534C56/exefs.nsp",
+      "atmosphere/contents/0000000000534C56/toolbox.json",
+      "atmosphere/contents/0000000000534C56/flags/boot2.flag"
+    ]
+  },
+
+  "missioncontrol": {
+    "github": "ndeadly/MissionControl",
+    "pkgbuild": "packages/missioncontrol/pkgbuild.json",
+    "strip_v": true,
+    "asset_regex": "^MissionControl-.*\\.zip$",
+    "asset_type": "zip",
+    "expected_files": [
+      "atmosphere/contents/010000000000bd00/exefs.nsp",
+      "atmosphere/contents/010000000000bd00/mitm.lst",
+      "atmosphere/contents/010000000000bd00/toolbox.json",
+      "atmosphere/contents/010000000000bd00/flags/boot2.flag",
+      "config/MissionControl/missioncontrol.ini.template"
+    ]
+  },
+
+  "jksv": {
+    "github": "J-D-K/JKSV",
+    "pkgbuild": "packages/jksv/pkgbuild.json",
+    "strip_v": false,
+    "asset_exact": "JKSV.nro",
+    "asset_type": "file"
+  }
+}

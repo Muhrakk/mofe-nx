@@ -1,6 +1,28 @@
 {
  "packages": [
   {
+   "name": "jksv",
+   "title": "JKSV",
+   "description": "Nintendo Switch save-data manager.",
+   "author": "J-D-K",
+   "version": "12/02/2025",
+   "license": "GPL-3.0",
+   "url": "https://github.com/J-D-K/JKSV",
+   "category": "tool",
+   "details": "Save backup, restore, and management utility.",
+   "changelog": "",
+   "filesize": 4511,
+   "extracted": 9893,
+   "md5": "00f1fdcf75ffd04b9ee76aa3b9e571ed",
+   "sha256": "1f0d906f0742a073d9a4a6890ac14b2dae959678856a111758be7cac6de93af0",
+   "updated": "06/10/2026",
+   "appCreated": "06/10/2026",
+   "binary": "/switch/JKSV.nro",
+   "screens": 0,
+   "web_dls": -1,
+   "app_dls": -1
+  },
+  {
    "name": "missioncontrol",
    "title": "MissionControl",
    "description": "Use controllers from other consoles natively on Nintendo Switch via Bluetooth.",
