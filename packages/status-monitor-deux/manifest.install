@@ -1,0 +1,14 @@
+U: switch/.overlays/Status-Monitor-Deux.ovl
+U: config/status-monitor-deux/config.ini.template
+U: config/status-monitor-deux/locale.ini
+U: config/status-monitor-deux/extensions/hocclk-stable.smse
+U: config/status-monitor-deux/extensions/sysclk.smse
+U: config/status-monitor-deux/modes/01.Full.smd
+U: config/status-monitor-deux/modes/02.Mini.smd
+U: config/status-monitor-deux/modes/03.Micro.smd
+U: config/status-monitor-deux/modes/FPS/01.FPSGraph.smd
+U: config/status-monitor-deux/modes/FPS/02.FPSCounter.smd
+U: config/status-monitor-deux/modes/Other/01.BatteryCharger.smd
+U: config/status-monitor-deux/modes/Other/02.Miscellaneous.smd
+U: config/status-monitor-deux/modes/Other/03.GameResolutions.smd
+U: config/status-monitor-deux/modes/Other/_folder.ini

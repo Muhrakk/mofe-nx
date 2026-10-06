@@ -13,7 +13,6 @@
       "atmosphere/contents/0000000000534C56/flags/boot2.flag"
     ]
   },
-
   "missioncontrol": {
     "github": "ndeadly/MissionControl",
     "pkgbuild": "packages/missioncontrol/pkgbuild.json",
@@ -27,5 +26,46 @@
       "atmosphere/contents/010000000000bd00/flags/boot2.flag",
       "config/MissionControl/missioncontrol.ini.template"
     ]
+  },
+  "emuiibo": {
+    "github": "XorTroll/emuiibo",
+    "pkgbuild": "packages/emuiibo/pkgbuild.json",
+    "strip_v": true,
+    "asset_regex": "^emuiibo.*\\.zip$",
+    "asset_type": "zip",
+    "expected_files": [
+      "SdOut/atmosphere/contents/0100000000000352/exefs.nsp",
+      "SdOut/switch/.overlays/emuiibo.ovl"
+    ]
+  },
+  "edizon-overlay": {
+    "github": "proferabg/EdiZon-Overlay",
+    "pkgbuild": "packages/edizon-overlay/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "ovlEdiZon.ovl",
+    "asset_type": "file"
+  },
+  "fpslocker": {
+    "github": "masagrator/FPSLocker",
+    "pkgbuild": "packages/fpslocker/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "FPSLocker.ovl",
+    "asset_type": "file"
+  },
+  "sys-dock": {
+    "github": "masagrator/sys-dock",
+    "pkgbuild": "packages/sys-dock/pkgbuild.json",
+    "strip_v": true,
+    "asset_regex": "^sys-dock.*\\.zip$",
+    "asset_type": "zip",
+    "expected_files": []
+  },
+  "status-monitor-deux": {
+    "github": "masagrator/Status-Monitor-Deux",
+    "pkgbuild": "packages/status-monitor-deux/pkgbuild.json",
+    "strip_v": true,
+    "asset_regex": "^Status-Monitor-Deux.*\\.zip$",
+    "asset_type": "zip",
+    "expected_files": []
   }
 }

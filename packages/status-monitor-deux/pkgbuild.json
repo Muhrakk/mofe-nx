@@ -1,0 +1,28 @@
+{
+  "package": "status-monitor-deux",
+  "info": {
+    "title": "Status Monitor Deux",
+    "author": "masagrator",
+    "category": "tool",
+    "version": "0.2.1",
+    "url": "https://github.com/masagrator/Status-Monitor-Deux",
+    "license": "GPL-2.0",
+    "description": "Highly configurable system monitoring overlay.",
+    "details": "Status Monitor Deux overlay and configuration files.",
+    "binary": false
+  },
+  "changelog": "",
+  "assets": [
+    {
+      "url": "https://github.com/masagrator/Status-Monitor-Deux/releases/download/0.2.1/Status-Monitor-Deux.zip",
+      "type": "zip",
+      "zip": [
+        {
+          "path": "/**/*",
+          "dest": "/",
+          "type": "update"
+        }
+      ]
+    }
+  ]
+}

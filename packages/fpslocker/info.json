@@ -1,0 +1,11 @@
+{
+ "title": "FPSLocker",
+ "description": "Overlay for changing FPS targets and display refresh rates.",
+ "author": "masagrator",
+ "version": "3.5.0",
+ "license": "GPL-2.0",
+ "url": "https://github.com/masagrator/FPSLocker",
+ "category": "tool",
+ "details": "FPSLocker overlay for use with SaltyNX.",
+ "changelog": ""
+}
