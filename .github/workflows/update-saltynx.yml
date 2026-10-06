@@ -1,0 +1,123 @@
+name: Update SaltyNX
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_rebuild:
+        description: "Rebuild and deploy even if SaltyNX is already current"
+        required: false
+        default: false
+        type: boolean
+
+  schedule:
+    - cron: "17 */6 * * *"
+      timezone: "America/Los_Angeles"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: mofe-nx-pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    outputs:
+      build: ${{ steps.decision.outputs.build }}
+
+    steps:
+      - name: Check out MoFe-NX
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check SaltyNX upstream
+        id: saltynx
+        run: python scripts/update_saltynx.py
+
+      - name: Decide whether to build
+        id: decision
+        shell: bash
+        run: |
+          if [[ "${{ steps.saltynx.outputs.changed }}" == "true" || "${{ github.event.inputs.force_rebuild }}" == "true" ]]; then
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Clone Spinarak
+        if: steps.decision.outputs.build == 'true'
+        run: git clone --depth 1 https://github.com/fortheusers/spinarak.git spinarak
+
+      - name: Install Spinarak requirements
+        if: steps.decision.outputs.build == 'true'
+        run: python -m pip install -r spinarak/requirements.txt
+
+      - name: Build SaltyNX package
+        if: steps.decision.outputs.build == 'true'
+        working-directory: packages
+        run: python ../spinarak/spinarak.py saltynx
+
+      - name: Validate generated repository
+        if: steps.decision.outputs.build == 'true'
+        run: python -m json.tool packages/public/repo.json > /dev/null
+
+      - name: Refresh published store
+        if: steps.decision.outputs.build == 'true'
+        shell: bash
+        run: |
+          rm -rf docs
+          mkdir -p docs
+          cp -a packages/public/. docs/
+
+      - name: Commit updated store
+        if: steps.decision.outputs.build == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add packages/saltynx/pkgbuild.json docs/
+
+          if git diff --cached --quiet; then
+            echo "No repository changes need committing."
+          else
+            git commit -m "Update SaltyNX to ${{ steps.saltynx.outputs.latest_version }}"
+            git push
+          fi
+
+      - name: Configure GitHub Pages
+        if: steps.decision.outputs.build == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: steps.decision.outputs.build == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+  deploy:
+    if: needs.update.outputs.build == 'true'
+    needs: update
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy MoFe-NX
+        id: deployment
+        uses: actions/deploy-pages@v4
