@@ -18,8 +18,28 @@
       "type": "zip",
       "zip": [
         {
-          "path": "/SdOut/**/*",
-          "dest": "/",
+          "path": "/SdOut/atmosphere/contents/0100000000000352/exefs.nsp",
+          "dest": "/atmosphere/contents/0100000000000352/exefs.nsp",
+          "type": "update"
+        },
+        {
+          "path": "/SdOut/atmosphere/contents/0100000000000352/toolbox.json",
+          "dest": "/atmosphere/contents/0100000000000352/toolbox.json",
+          "type": "update"
+        },
+        {
+          "path": "/SdOut/atmosphere/contents/0100000000000352/flags/boot2.flag",
+          "dest": "/atmosphere/contents/0100000000000352/flags/boot2.flag",
+          "type": "update"
+        },
+        {
+          "path": "/SdOut/switch/.overlays/emuiibo.ovl",
+          "dest": "/switch/.overlays/emuiibo.ovl",
+          "type": "update"
+        },
+        {
+          "path": "/SdOut/emuiibo/overlay/lang/*",
+          "dest": "/emuiibo/overlay/lang/",
           "type": "update"
         }
       ]
