@@ -69,7 +69,8 @@ jobs:
         if: steps.decision.outputs.build == 'true'
         working-directory: packages
         run: |
-          python ../spinarak/spinarak.py ${{ steps.packages.outputs.package_names }}
+          rm -rf public
+          python ../spinarak/spinarak.py
 
       - name: Validate generated repository
         if: steps.decision.outputs.build == 'true'
