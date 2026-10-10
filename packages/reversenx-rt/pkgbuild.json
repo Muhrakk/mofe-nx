@@ -2,21 +2,25 @@
   "package": "reversenx-rt",
   "info": {
     "title": "ReverseNX-RT",
-    "author": "ppkantorski",
+    "author": "masagrator, ppkantorski",
     "category": "tool",
     "version": "2.2.1+r1",
-    "url": "https://github.com/ppkantorski/ReverseNX-RT",
+    "url": "https://github.com/ppkantorski/ReverseNX-RT/releases",
     "license": "MIT",
-    "description": "Real-time handheld and docked-mode switching overlay.",
-    "details": "libultrahand rebuild of ReverseNX-RT.",
+    "description": "Switch between handheld and docked modes in real time.",
+    "details": "ReverseNX-RT is an Ultrahand overlay that lets you switch compatible Nintendo Switch games between handheld and docked rendering modes in real time.\n\nIt is useful for forcing a game's handheld or docked graphics profile without rebooting the console or restarting the game, allowing you to compare image quality, resolution, performance, and power behavior on the fly.\n\nThis build is maintained by ppkantorski and rebuilt with libultrahand for integration with the modern Ultrahand overlay ecosystem.",
     "binary": false
   },
   "changelog": "",
   "assets": [
     {
       "url": "https://github.com/ppkantorski/ReverseNX-RT/releases/download/2.2.1%2Br1/ReverseNX-RT-ovl.ovl",
-      "type": "update",
-      "dest": "/switch/.overlays/ReverseNX-RT-ovl.ovl"
+      "dest": "/switch/.overlays/ReverseNX-RT-ovl.ovl",
+      "type": "update"
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
     }
   ]
 }

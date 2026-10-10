@@ -1,0 +1,26 @@
+{
+  "package": "prelude",
+  "info": {
+    "title": "Prelude",
+    "author": "Nextendo Network",
+    "category": "tool",
+    "version": "3.5.14",
+    "url": "https://github.com/NextendoNetwork/Prelude-Nextendo/releases",
+    "license": "PolyForm Shield 1.0.0",
+    "description": "Switch between Nextendo Network and Nintendo's official network services.",
+    "details": "Prelude is a Nintendo Switch homebrew application for switching an Atmosphere console between Nextendo Network and Nintendo's official network services.\n\nNextendo mode configures the Atmosphere files and patches needed to connect supported games and services to Nextendo Network. Nintendo mode removes Prelude's changes and restores the console's normal Nintendo network configuration.\n\nPrelude applies its changes through files and settings that Atmosphere reads at boot, making the process reversible. After selecting a network mode, the console reboots so the new configuration can take effect.",
+    "binary": "/switch/nextendo.nro"
+  },
+  "changelog": "",
+  "assets": [
+    {
+      "url": "https://github.com/NextendoNetwork/Prelude-Nextendo/releases/download/v3.5.14/nextendo.nro",
+      "dest": "/switch/nextendo.nro",
+      "type": "update"
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
+    }
+  ]
+}

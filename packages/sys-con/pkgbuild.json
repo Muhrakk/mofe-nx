@@ -2,13 +2,13 @@
   "package": "sys-con",
   "info": {
     "title": "sys-con",
-    "author": "o0Zz",
-    "category": "advanced",
+    "author": "cathery, o0Zz",
+    "category": "tool",
     "version": "2.0.0",
-    "url": "https://github.com/o0Zz/sys-con",
+    "url": "https://github.com/o0Zz/sys-con/releases",
     "license": "MIT",
-    "description": "USB controller support sysmodule for Nintendo Switch.",
-    "details": "Adds support for many USB HID and XInput controllers.",
+    "description": "Use USB controllers from other consoles on Nintendo Switch.",
+    "details": "sys-con is a Nintendo Switch sysmodule that adds support for third-party USB controllers.\n\nIt supports a wide range of HID and XInput-compatible gamepads, including PlayStation, Xbox, PC controllers, arcade sticks, wheels, and other USB input devices. Controllers can be used in docked mode or through a compatible USB-C OTG adapter in handheld mode.\n\nConfiguration files under `sd:/config/sys-con/` allow you to customize button mappings, stick and trigger behavior, deadzones, polling settings, controller profiles, and other device-specific options.",
     "binary": false
   },
   "changelog": "",
@@ -23,6 +23,10 @@
           "type": "update"
         }
       ]
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
     }
   ]
 }

@@ -2,13 +2,13 @@
   "package": "sys-tune",
   "info": {
     "title": "sys-tune",
-    "author": "ppkantorski / HookedBehemoth",
+    "author": "HookedBehemoth, ppkantorski",
     "category": "advanced",
     "version": "2.1.0+r3",
-    "url": "https://github.com/ppkantorski/sys-tune",
-    "license": "GPL-2.0",
+    "url": "https://github.com/ppkantorski/sys-tune/releases",
+    "license": "GPLv2",
     "description": "Background audio player for Nintendo Switch.",
-    "details": "libultrahand rebuild of sys-tune with an Ultrahand-compatible music overlay.",
+    "details": "sys-tune is a background audio player for Nintendo Switch with an Ultrahand overlay for controlling playback.\n\nIt supports MP3, FLAC, and WAV audio, playlist browsing, seeking, shuffle and repeat modes, persistent playback settings, per-title behavior, and separate control over music and game audio volume.\n\nMusic can be played from the SD card and managed without leaving the currently running game or application. sys-tune can also be configured for HOME Menu background music and title-specific playback behavior.\n\nBecause audio playback can interfere with sleep mode or titles that heavily use the system audio renderer, pause playback or stop the service if you encounter audio or sleep-related issues.",
     "binary": false
   },
   "changelog": "",
@@ -23,6 +23,10 @@
           "type": "update"
         }
       ]
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
     }
   ]
 }

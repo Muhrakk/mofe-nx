@@ -110,5 +110,12 @@
     "atmosphere/contents/4200000000000000/exefs.nsp",
     "atmosphere/contents/4200000000000000/toolbox.json"
     ]
+  },
+  "prelude": {
+    "github": "NextendoNetwork/Prelude-Nextendo",
+    "pkgbuild": "packages/prelude/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "nextendo.nro",
+    "asset_type": "file"
   }
 }

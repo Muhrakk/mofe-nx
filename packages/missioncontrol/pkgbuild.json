@@ -3,12 +3,12 @@
   "info": {
     "title": "MissionControl",
     "author": "ndeadly",
-    "category": "advanced",
+    "category": "tool",
     "version": "0.16.0",
-    "url": "https://github.com/ndeadly/MissionControl",
-    "license": "GPL-2.0",
-    "description": "Use controllers from other consoles natively on Nintendo Switch via Bluetooth.",
-    "details": "MissionControl sysmodule by ndeadly.",
+    "url": "https://github.com/ndeadly/MissionControl/releases",
+    "license": "GPLv2",
+    "description": "Use controllers from other consoles via Bluetooth.",
+    "details": "Use controllers from other consoles natively on your Nintendo Switch via Bluetooth. No dongles or other external hardware necessary.\n\nAfter installing this package, reboot your console to activate the module.\n\nMissionControl supports a wide range of Bluetooth controllers, including Wii/Wii U, DualShock 3/4, DualSense, Xbox One Bluetooth controllers, several 8BitDo models, and many third-party controllers. It integrates with the Switch's native controller pairing and remapping interfaces, supports rumble and motion controls on compatible devices, and can connect multiple non-Switch Bluetooth controllers simultaneously.",
     "binary": false
   },
   "changelog": "",
@@ -23,6 +23,10 @@
           "type": "update"
         }
       ]
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
     }
   ]
 }

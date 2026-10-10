@@ -3,12 +3,12 @@
   "info": {
     "title": "Status Monitor Deux",
     "author": "masagrator",
-    "category": "tool",
+    "category": "advanced",
     "version": "0.2.1",
-    "url": "https://github.com/masagrator/Status-Monitor-Deux",
-    "license": "GPL-2.0",
-    "description": "Highly configurable system monitoring overlay.",
-    "details": "Status Monitor Deux overlay and configuration files.",
+    "url": "https://github.com/masagrator/Status-Monitor-Deux/releases",
+    "license": "GPLv2",
+    "description": "Monitor Nintendo Switch hardware statistics in real time.",
+    "details": "Status Monitor Deux is the next generation of Status Monitor Overlay for Nintendo Switch.\n\nIt displays real-time hardware statistics such as per-core CPU usage, GPU load, CPU/GPU/RAM frequencies, memory usage, temperatures, and fan behavior through an overlay interface.\n\nUnlike the original Status Monitor Overlay, Status Monitor Deux uses customizable `.smd` script files for its display modes and `.smse` extension files for additional services, giving you much more control over how information is presented.\n\nIts configuration, modes, extensions, and localization files are stored under `sd:/config/status-monitor-deux`.",
     "binary": false
   },
   "changelog": "",
@@ -23,6 +23,10 @@
           "type": "update"
         }
       ]
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
     }
   ]
 }

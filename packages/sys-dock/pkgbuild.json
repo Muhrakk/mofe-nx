@@ -5,10 +5,10 @@
     "author": "masagrator",
     "category": "advanced",
     "version": "1.0.2",
-    "url": "https://github.com/masagrator/sys-dock",
+    "url": "https://github.com/masagrator/sys-dock/releases",
     "license": "",
-    "description": "Docked display patching sysmodule for Nintendo Switch.",
-    "details": "Provides docked display patches used with tools such as FPSLocker.",
+    "description": "Enable higher docked display bandwidth and refresh rates.",
+    "details": "sys-dock is a Nintendo Switch sysmodule that patches docked DisplayPort link training to allow higher-bandwidth display modes and higher refresh rates.\n\nIt is primarily intended for use alongside FPSLocker, especially on OLED models where the default docked DisplayPort configuration can limit available refresh rates. The included overlay lets you enable or disable individual DisplayPort patches and see which patches are currently active.\n\nConfiguration is stored in `sd:/config/sys-dock/config.ini` and can be edited manually or through the overlay.\n\nBecause sys-dock changes low-level dock and display behavior, incompatible docks, displays, cables, or patch combinations may cause display corruption, instability, or other unexpected behavior.",
     "binary": false
   },
   "changelog": "",
@@ -23,6 +23,10 @@
           "type": "update"
         }
       ]
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
     }
   ]
 }

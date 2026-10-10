@@ -1,28 +1,32 @@
 {
-    "package": "saltynx",
-    "info": {
-        "title": "SaltyNX",
-        "author": "masagrator",
-        "category": "advanced",
-        "version": "2.1.2",
-        "url": "https://github.com/masagrator/SaltyNX",
-        "license": "",
-        "description": "Sysmodule for injecting custom code into Nintendo Switch games.",
-        "details": "Custom store package for SaltyNX.",
-		"binary": false
-    },
-    "changelog": "",
-    "assets": [
+  "package": "saltynx",
+  "info": {
+    "title": "SaltyNX",
+    "author": "shinyquagsire23, masagrator",
+    "category": "advanced",
+    "version": "2.1.2",
+    "url": "https://github.com/masagrator/SaltyNX/releases",
+    "license": "",
+    "description": "Background process for the Nintendo Switch for file/code modification.",
+    "details": "SaltyNX is a background process for Nintendo Switch that enables runtime file and code modification in retail games.\n\nOriginally created by shinyquagsire23 and maintained as an expanded fork by masagrator, SaltyNX provides the underlying framework used by tools such as FPSLocker and other game-modification plugins.\n\nThis fork includes numerous quality-of-life, compatibility, performance-monitoring, display-control, and plugin-injection improvements.",
+    "binary": false
+  },
+  "changelog": "",
+  "assets": [
+    {
+      "url": "https://github.com/masagrator/SaltyNX/releases/download/2.1.2/SaltyNX.zip",
+      "type": "zip",
+      "zip": [
         {
-            "url": "https://github.com/masagrator/SaltyNX/releases/download/2.1.2/SaltyNX.zip",
-            "type": "zip",
-            "zip": [
-                {
-                    "path": "/**/*",
-                    "dest": "/",
-                    "type": "update"
-                }
-            ]
+          "path": "/**/*",
+          "dest": "/",
+          "type": "update"
         }
-    ]
+      ]
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
+    }
+  ]
 }
