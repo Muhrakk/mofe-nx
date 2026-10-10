@@ -3,9 +3,9 @@
  "description": "Virtual amiibo emulation system for Nintendo Switch.",
  "author": "XorTroll",
  "version": "1.1.3",
- "license": "GPL-2.0",
- "url": "https://github.com/XorTroll/emuiibo",
- "category": "advanced",
- "details": "emuiibo sysmodule and overlay.",
+ "license": "GPLv2",
+ "url": "https://github.com/XorTroll/emuiibo/releases",
+ "category": "tool",
+ "details": "Virtual amiibo (amiibo emulation) system for Nintendo Switch.\n\nVirtual amiibos are stored under `sd:/emuiibo/amiibo` and should be organized into subdirectories. emuiibo intercepts the Switch's amiibo services, allowing compatible games to use virtual amiibos through its overlay.\n\nUse the emuiibo overlay to enable or disable amiibo emulation, select an active virtual amiibo, connect or disconnect it, and configure options such as randomized UUIDs.",
  "changelog": ""
 }

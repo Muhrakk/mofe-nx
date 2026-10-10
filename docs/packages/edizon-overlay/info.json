@@ -1,11 +1,11 @@
 {
- "title": "EdiZon Overlay",
- "description": "Ultrahand overlay for managing cheats.",
- "author": "proferabg",
+ "title": "EdiZon-Overlay",
+ "description": "Toggle cheats in a convenient overlay.",
+ "author": "WerWolv, proferabg, ppkantorski",
  "version": "1.0.15",
- "license": "GPL-2.0",
- "url": "https://github.com/proferabg/EdiZon-Overlay",
- "category": "tool",
- "details": "Maintained EdiZon Overlay fork by proferabg and ppkantorski.",
+ "license": "GPLv2",
+ "url": "https://github.com/proferabg/EdiZon-Overlay/releases",
+ "category": "_misc",
+ "details": "EdiZon-Overlay provides in-game cheat management through the Ultrahand overlay environment.\n\nIt allows you to browse and toggle cheats for the currently running title without leaving the game. This maintained fork continues the original EdiZon-Overlay by WerWolv and includes support for newer Horizon OS and libultrahand releases.\n\nThe overlay also supports cheat submenus and optional cheats that are enabled automatically whenever the overlay is opened.",
  "changelog": ""
 }

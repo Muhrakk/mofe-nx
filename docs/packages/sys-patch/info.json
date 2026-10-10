@@ -1,11 +1,11 @@
 {
  "title": "sys-patch",
- "description": "Runtime patching sysmodule for Atmosphere.",
- "author": "impeeza",
+ "description": "Apply system patches automatically at boot.",
+ "author": "btc08gh, impeeza",
  "version": "1.6.2.3",
- "license": "GPL-2.0",
- "url": "https://github.com/impeeza/sys-patch",
+ "license": "GPLv2",
+ "url": "https://github.com/impeeza/sys-patch/releases",
  "category": "advanced",
- "details": "Applies FS, ES, loader and related runtime patches during boot.",
+ "details": "sys-patch is a Nintendo Switch sysmodule that automatically applies fs, es, ldr, nifm, and nim patches when the system boots.\n\nIt can patch both sysMMC and emuMMC and includes an overlay for changing configuration options and checking which patches were successfully applied. The overlay distinguishes between patches applied by sys-patch and patches that were already present from another source.\n\nConfiguration is stored in `sd:/config/sys-patch/config.ini`, where you can control sysMMC and emuMMC patching, logging, and version-pattern behavior.\n\nBecause sys-patch modifies low-level system behavior, it is best suited for advanced users who understand Atmosphere and firmware compatibility.",
  "changelog": ""
 }

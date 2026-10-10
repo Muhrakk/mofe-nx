@@ -1,11 +1,11 @@
 {
  "title": "NX-FanControl",
- "description": "Custom fan-curve control for Nintendo Switch.",
- "author": "dominatorul",
+ "description": "Custom fan curve control for Nintendo Switch.",
+ "author": "Zathawo, dominatorul",
  "version": "1.0.5+",
  "license": "MIT",
- "url": "https://github.com/dominatorul/NX-FanControl",
- "category": "advanced",
- "details": "Fan-control sysmodule and overlay.",
+ "url": "https://github.com/dominatorul/NX-FanControl/releases",
+ "category": "tool",
+ "details": "NX-FanControl is a Nintendo Switch sysmodule and overlay for customizing the console's internal fan curve.\n\nIt allows you to define multiple temperature points with corresponding fan speeds, giving you more control over the balance between cooling performance and fan noise. The overlay also provides real-time monitoring of SoC temperature and fan RPM.\n\nBecause NX-FanControl directly changes fan behavior, use sensible fan curves and avoid settings that significantly reduce cooling at high temperatures.",
  "changelog": ""
 }
