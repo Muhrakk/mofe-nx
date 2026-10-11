@@ -1,0 +1,11 @@
+{
+ "title": "ldn_mitm",
+ "description": "Play local-wireless Nintendo Switch games over LAN.",
+ "author": "spacemeowx2, DefenderOfHyrule",
+ "version": "1.22.0",
+ "license": "GPLv2",
+ "url": "https://github.com/DefenderOfHyrule/ldn_mitm/releases",
+ "category": "advanced",
+ "details": "ldn_mitm is an Atmosphere sysmodule that replaces the Nintendo Switch ldn service and redirects local-wireless discovery over LAN networking.\n\nIt allows games that normally communicate through local wireless to work over a network connection, and is commonly used together with switch-lan-play for online play with supported local-wireless titles.\n\nThe package also includes configuration tools and should be rebooted after installation so the sysmodule can start.",
+ "changelog": "v1.22.0\n\nThis release was compiled with the latest libnx and atmosphere-libs."
+}
