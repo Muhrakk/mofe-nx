@@ -7,5 +7,5 @@
  "url": "https://github.com/masagrator/SaltyNX/releases",
  "category": "advanced",
  "details": "SaltyNX is a background process for Nintendo Switch that enables runtime file and code modification in retail games.\n\nOriginally created by shinyquagsire23 and maintained as an expanded fork by masagrator, SaltyNX provides the underlying framework used by tools such as FPSLocker and other game-modification plugins.\n\nThis fork includes numerous quality-of-life, compatibility, performance-monitoring, display-control, and plugin-injection improvements.",
- "changelog": ""
+ "changelog": "2.1.2\n\nFix crash in very old NVN games that don't support nvnWindowGetCrop, f.e. Minecraft: Story Mode - The Complete Adventure."
 }

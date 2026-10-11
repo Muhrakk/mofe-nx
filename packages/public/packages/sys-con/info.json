@@ -7,5 +7,5 @@
  "url": "https://github.com/o0Zz/sys-con/releases",
  "category": "tool",
  "details": "sys-con is a Nintendo Switch sysmodule that adds support for third-party USB controllers.\n\nIt supports a wide range of HID and XInput-compatible gamepads, including PlayStation, Xbox, PC controllers, arcade sticks, wheels, and other USB input devices. Controllers can be used in docked mode or through a compatible USB-C OTG adapter in handheld mode.\n\nConfiguration files under `sd:/config/sys-con/` allow you to customize button mappings, stick and trigger behavior, deadzones, polling settings, controller profiles, and other device-specific options.",
- "changelog": ""
+ "changelog": "2.0.0\n\n# Changelog\n - Implemented MITM mode\n - Added Rumble support\n - Added Gyro support\n - Added SInput support\n - Added support for UDP network controllers\n - Drastically reduced sys-con's RAM and ROM footprint\n\nThis release is a major update of sys-con, with a large portion of the codebase refactored and improved.\nBecause of the scale of these changes, this version may be less stable than previous releases. If stability is your priority, consider staying on v1.7.0 for now.\n\nSpecial thanks to @saad-script for their help with development and testing."
 }
