@@ -1,0 +1,11 @@
+{
+ "title": "SimpleModManager",
+ "description": "Manage LayeredFS game mods directly on Nintendo Switch.",
+ "author": "nadrino",
+ "version": "2.1.4",
+ "license": "GPLv3",
+ "url": "https://github.com/nadrino/SimpleModManager/releases",
+ "category": "tool",
+ "details": "SimpleModManager is a Nintendo Switch homebrew application for managing Atmosphere LayeredFS mods.\n\nIt organizes mods by game and lets you apply, remove, check, and manage mod sets directly from the console. Mods are stored under `sd:/mods/` using a game and mod directory structure before being copied into their appropriate Atmosphere locations.",
+ "changelog": "2.1.4\n\n# What's new?\n- Recompiled with the latest devkitPro -- Many of you reported a bug with the latest version of the app\n- Optimized IO\n- Option to sort game list by nb of mods or alphabetical order\n- Fixed terminal version of the app\n- Fixed per game install preset\n- Stability improvements (fixed bad pointers freeing, so hopefully less crash with the UI...)\n\nFull changelog: https://github.com/nadrino/SimpleModManager/compare/2.1.2...2.1.4"
+}
