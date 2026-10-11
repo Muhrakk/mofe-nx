@@ -117,5 +117,17 @@
     "strip_v": true,
     "asset_exact": "nextendo.nro",
     "asset_type": "file"
+  },
+  "ldn-mitm": {
+    "github": "DefenderOfHyrule/ldn_mitm",
+    "pkgbuild": "packages/ldn-mitm/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "ldn_mitm.zip",
+    "asset_type": "zip",
+    "expected_files": [
+      "atmosphere/contents/4200000000000010/exefs.nsp",
+      "atmosphere/contents/4200000000000010/toolbox.json",
+      "atmosphere/contents/4200000000000010/flags/boot2.flag"
+    ]
   }
 }
