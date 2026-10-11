@@ -129,5 +129,60 @@
       "atmosphere/contents/4200000000000010/toolbox.json",
       "atmosphere/contents/4200000000000010/flags/boot2.flag"
     ]
+  },
+  "sysdvr": {
+    "github": "exelix11/SysDVR",
+    "pkgbuild": "packages/sysdvr/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "SysDVR.zip",
+    "asset_type": "zip",
+	"expected_files": [
+      "atmosphere/contents/00FF0000A53BB665/exefs.nsp",
+      "atmosphere/contents/00FF0000A53BB665/toolbox.json",
+      "atmosphere/contents/00FF0000A53BB665/flags/boot2.flag",
+      "switch/SysDVR-conf.nro"
+    ]
+  },
+  "nxthemes-installer": {
+    "github": "exelix11/SwitchThemeInjector",
+    "pkgbuild": "packages/nxthemes-installer/pkgbuild.json",
+    "strip_v": false,
+    "asset_exact": "NXThemesInstaller.nro",
+    "asset_type": "file"
+  },
+  "tico": {
+    "github": "ticohq/tico",
+    "pkgbuild": "packages/tico/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "tico.nro",
+    "asset_type": "file"
+  },
+  "nso-icon-tool": {
+    "github": "dslatt/nso-icon-tool",
+    "pkgbuild": "packages/nso-icon-tool/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "nso-icon-tool.nro",
+    "asset_type": "file"
+  },
+  "90dns-tester": {
+    "github": "meganukebmp/Switch_90DNS_tester",
+    "pkgbuild": "packages/90dns-tester/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "Switch_90DNS_tester.nro",
+    "asset_type": "file"
+  },
+  "fizeau": {
+    "github": "ppkantorski/Fizeau",
+    "pkgbuild": "packages/fizeau/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "Fizeau.ovl",
+    "asset_type": "file"
+  },
+  "simplemodmanager": {
+    "github": "nadrino/SimpleModManager",
+    "pkgbuild": "packages/simplemodmanager/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "SimpleModManager.nro",
+    "asset_type": "file"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "package": "nxthemes-installer",
+  "info": {
+    "title": "NXThemes Installer",
+    "author": "exelix11",
+    "category": "tool",
+    "version": "nxt-3.0.2",
+    "url": "https://github.com/exelix11/SwitchThemeInjector/releases",
+    "license": "GPLv2",
+    "description": "Install custom Nintendo Switch HOME Menu themes.",
+    "details": "NXThemes Installer installs and manages custom HOME Menu themes on Nintendo Switch.\n\nIt supports NXTheme packages as well as direct image installation and includes compatibility handling for different HOME Menu versions. Newer releases also support boot-screen installation and selective installation of images or layouts from NXTheme files.",
+    "binary": "/switch/NXThemesInstaller.nro"
+  },
+  "changelog": "nxt-3.0.2\n\n# Firmware 23.0 Situation\nCurrently themes do not work on 23.0 due to changes in how the home menu accesses its romfs.\nWe are waiting for a fix on atmosphere's side, this notice will be updated when a fix is out.\n\n\n\n# Changes\n- Better support for hekate boot screen images. Automatically rotate images in portrait aspect ratio when needed.\n- Support for the booscreen Themezer API, bootscreens can now be installed directly like normal themes\n- Fix float parsing issues in NxThemeTool #196",
+  "assets": [
+    {
+      "url": "https://github.com/exelix11/SwitchThemeInjector/releases/download/nxt-3.0.2/NXThemesInstaller.nro",
+      "type": "update",
+      "dest": "/switch/NXThemesInstaller.nro"
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
+    }
+  ]
+}

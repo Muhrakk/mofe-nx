@@ -1,0 +1,26 @@
+{
+  "package": "fizeau",
+  "info": {
+    "title": "Fizeau",
+    "author": "ppkantorski",
+    "category": "tool",
+    "version": "2.8.2+r7",
+    "url": "https://github.com/ppkantorski/Fizeau/releases",
+    "license": "GPLv2",
+    "description": "Adjust Nintendo Switch display color in real time.",
+    "details": "Fizeau is an Ultrahand overlay for real-time Nintendo Switch display color management.\n\nIt provides controls for color temperature, saturation, hue, gamma, and contrast, along with scheduled dusk and dawn transitions for automatically changing display characteristics throughout the day.",
+    "binary": false
+  },
+  "changelog": "v2.8.2+r7\n\nRe-compilation with latest `libultrahand` (v2.5.2).\n\n**Full Changelog**: https://github.com/ppkantorski/Fizeau/compare/v2.8.2+r6...v2.8.2+r7",
+  "assets": [
+    {
+      "url": "https://github.com/ppkantorski/Fizeau/releases/download/v2.8.2%2Br7/Fizeau.ovl",
+      "type": "update",
+      "dest": "/switch/.overlays/Fizeau.ovl"
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "package": "tico",
+  "info": {
+    "title": "tico",
+    "author": "tico",
+    "category": "emulator",
+    "version": "0.7.9",
+    "url": "https://github.com/ticohq/tico/releases",
+    "license": "tico",
+    "description": "A customizable multi-system game launcher and emulator frontend.",
+    "details": "tico is a Nintendo Switch game launcher and emulator frontend with support for multiple retro systems through independently maintained emulator cores.\n\nIt provides a customizable home interface, game-library browsing, cover and artwork management, RetroAchievements integration, touch support, and built-in management for supported emulator cores.\n\nAdditional emulator cores and supporting files can be installed or updated from within tico.",
+    "binary": "/switch/tico.nro"
+  },
+  "changelog": "0.7.9\n\n## What's New\n### Batch Asset Downloads\n* Added the ability to batch download covers, backgrounds, logos, and icons for your entire game library.\n---\n### New Customization Options\nTake control of Tico's look and startup experience with several new personalization settings:\n* **Skip the screen transition animation** for an instant switch between screens.\n* **Customize the screen tint color**, affecting both the dock and the startup animation.\n* **Change the tint color of inactive dock items** to better match your theme.\n* **Customize the animated gradient border** with your preferred color.\n* **Choose your startup screen**, launching directly into either **Home** or **Game Select**\n---\n### Homescreen & Backgrounds\n* Added the option to use the game background as the homescreen background.\n* Added per-screen homescreen backgrounds.\n* Added a symbol decoration for console card home shortcuts.\n* Added an optional background overlay for the homescreen \u2014 a semi-transparent white/black layer that improves the visibility of components above it.\n* Added new background animations for Home and Game Select, which can be set individually per screen.\n---\n### Homescreen Cards\n* Added styled console and game cards to the homescreen, each with a frame and badges available at all card sizes. Styled items can be disabled individually to show the raw item as before.\n* Added **1\u00d72** and **2\u00d71** item size options, giving you more flexibility when organizing your layout.\n---\n### Interface Settings Refactor\nThe Interface settings have been reorganized into clearer sections:\n* **Animations** \u2014 Skip animation, and Screen transition animation (used when the intro isn't skipped).\n* **Screens** \u2014 Separate settings for Home (game backgrounds, background transition, theme overlay, and other previously available options) and Game Select (background transition, theme overlay, and other previously available options).\n* **Card Settings** \u2014 Console and game card customization, now organized into sections, with a new option to extend card styling to the homescreen.\n* **Tint** \u2014 Screen tint color, inactive dock item tint, and gradient border color.\n---\n### Interface & Navigation\n* Improved the Quick Menu with per-screen options and a new layout.\n* Improved the Retro Achievements screen layout, with a new per-console view.\n* Added touch support to previously unsupported screens, including Assets and others.\n* Added the option to rescan all consoles at once.\n---\n## Want to Contribute?\n\nEvery emulator core has its own repository under the **Tico GitHub organization**, making development, issue tracking, and contributions easier.\n\nBug reports, feature requests, and pull requests are always welcome. Please respect each core's original license and attribution requirements.\n\n---",
+  "assets": [
+    {
+      "url": "https://github.com/ticohq/tico/releases/download/0.7.9/tico.nro",
+      "type": "update",
+      "dest": "/switch/tico.nro"
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
+    }
+  ]
+}
