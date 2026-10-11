@@ -136,9 +136,22 @@ def update_package(name, package):
 
     release = json.loads(github_request(api_url))
 
+    release_tag = str(release["tag_name"])
     latest_version = normalise_version(
-        release["tag_name"],
+        release_tag,
         package.get("strip_v", False),
+    )
+
+    # GitHub release notes are authoritative for the package changelog too.
+    # Keep the upstream tag exactly as written for display purposes.
+    release_body = (
+        release.get("body") or ""
+    ).replace("\r\n", "\n").replace("\r", "\n").strip()
+
+    latest_changelog = (
+        f"{release_tag}\n\n{release_body}".strip()
+        if release_body
+        else release_tag
     )
 
     release_asset = choose_asset(release, package)
@@ -152,16 +165,22 @@ def update_package(name, package):
     current_version = str(pkgbuild["info"]["version"])
     managed_asset = find_managed_asset(pkgbuild)
     current_url = managed_asset.get("url", "")
+    current_changelog = str(pkgbuild.get("changelog", ""))
 
     version_changed = current_version != latest_version
     url_changed = current_url != latest_url
+    changelog_changed = current_changelog != latest_changelog
 
     print(f"Current version: {current_version}")
     print(f"Latest version:  {latest_version}")
     print(f"Current asset:   {current_url}")
     print(f"Latest asset:    {latest_url}")
+    print(
+        "Changelog:      "
+        + ("differs from upstream" if changelog_changed else "current")
+    )
 
-    if not version_changed and not url_changed:
+    if not version_changed and not url_changed and not changelog_changed:
         print("Package metadata is already current.")
         return False
 
@@ -171,8 +190,12 @@ def update_package(name, package):
     if url_changed:
         print("  Release asset URL differs from upstream.")
 
+    if changelog_changed:
+        print("  Changelog differs from upstream release notes.")
+
     # Validate ZIP structure before accepting a new/changed upstream asset.
-    if package.get("asset_type") == "zip":
+    # A changelog-only update does not require downloading the ZIP again.
+    if package.get("asset_type") == "zip" and (version_changed or url_changed):
         expected_files = package.get("expected_files", [])
 
         if expected_files:
@@ -184,6 +207,7 @@ def update_package(name, package):
     # GitHub is authoritative for these fields.
     pkgbuild["info"]["version"] = latest_version
     managed_asset["url"] = latest_url
+    pkgbuild["changelog"] = latest_changelog
 
     with pkgbuild_path.open(
         "w",
@@ -195,8 +219,9 @@ def update_package(name, package):
 
     print()
     print(f"Updated {name}:")
-    print(f"  version -> {latest_version}")
-    print(f"  asset   -> {latest_url}")
+    print(f"  version   -> {latest_version}")
+    print(f"  asset     -> {latest_url}")
+    print(f"  changelog -> GitHub release notes for {release_tag}")
 
     return True
 
