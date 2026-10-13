@@ -1,0 +1,26 @@
+{
+  "package": "sysdvr-overlay",
+  "info": {
+    "title": "SysDVR Overlay",
+    "author": "ppkantorski",
+    "category": "tool",
+    "version": "1.0.15+r1",
+    "url": "https://github.com/ppkantorski/sysdvr-overlay/releases",
+    "license": "GPLv2",
+    "description": "Control and inspect SysDVR from an overlay.",
+    "details": "SysDVR Overlay is an Ultrahand overlay for checking and changing the current SysDVR streaming mode directly from the overlay menu.\n\nIt provides quick access to SysDVR controls without opening the standalone SysDVR configuration application and is intended to be used alongside an installed SysDVR sysmodule.",
+    "binary": false
+  },
+  "changelog": "v1.0.15+r1\n\nCompilation with latest `libultrahand` (v2.5.2).\n\n## **List of Changes**\n- Various text alignment corrections.\n\n**Full Changelog**: https://github.com/ppkantorski/sysdvr-overlay/compare/v1.0.15+...16efb88",
+  "assets": [
+    {
+      "url": "https://github.com/ppkantorski/sysdvr-overlay/releases/download/v1.0.15%2Br1/sysdvr-overlay.ovl",
+      "dest": "/switch/.overlays/sysdvr-overlay.ovl",
+      "type": "update"
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
+    }
+  ]
+}

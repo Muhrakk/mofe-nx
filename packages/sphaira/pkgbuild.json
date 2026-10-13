@@ -1,0 +1,32 @@
+{
+  "package": "sphaira",
+  "info": {
+    "title": "Sphaira",
+    "author": "NaGaa95, ITotalJustice",
+    "category": "tool",
+    "version": "1.0.8",
+    "url": "https://github.com/NaGaa95/sphaira/releases",
+    "license": "GPLv3",
+    "description": "A feature-rich homebrew menu for Nintendo Switch.",
+    "details": "Sphaira is a modern Nintendo Switch homebrew menu and file-management environment.\n\nIt includes a homebrew launcher, file browser, game and application management, install support, MTP and FTP functionality, App Store integration, forwarder creation, theme support, and a wide range of utility features.\n\nThis package installs Sphaira to `sd:/switch/sphaira/sphaira.nro`.",
+    "binary": "/switch/sphaira/sphaira.nro"
+  },
+  "changelog": "1.0.8\n\n# Sphaira 1.0.8\n\nAdded Ownfoil support. ([#379](https://github.com/NaGaa95/sphaira/pull/379), @a1ex4)\nAdded an album menu with QR-code web sharing. ([#377](https://github.com/NaGaa95/sphaira/pull/377), @Insektaure)\nAdded 32-bit address-space options to forwarder. ([#375](https://github.com/NaGaa95/sphaira/pull/375), @danfromtico)\nChanged game controls: A views content; Y launches with confirmation.\nImproved Chinese and Russian translations. ([#373](https://github.com/NaGaa95/sphaira/pull/373), @R-YaTian; [#380](https://github.com/NaGaa95/sphaira/pull/380), @AlgorithmLX)",
+  "assets": [
+    {
+      "url": "https://github.com/NaGaa95/sphaira/releases/download/1.0.8/sphaira.zip",
+      "type": "zip",
+      "zip": [
+        {
+          "path": "/**/*",
+          "dest": "/",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
+    }
+  ]
+}

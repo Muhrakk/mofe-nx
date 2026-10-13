@@ -1,0 +1,32 @@
+{
+  "package": "lockpick-rcm",
+  "info": {
+    "title": "Lockpick_RCM",
+    "author": "shchmue, impeeza",
+    "category": "advanced",
+    "version": "2.0.1",
+    "url": "https://github.com/impeeza/Lockpick_RCMDecScots/releases",
+    "license": "GPLv2",
+    "description": "Extract Nintendo Switch encryption keys from the boot environment.",
+    "details": "Lockpick_RCM is a bare-metal Nintendo Switch payload used to derive and dump encryption keys without booting Horizon OS.\n\nThis package uses the Hekate-compatible release and installs the included files to their intended SD card locations so Lockpick_RCM can be launched through Hekate's payload menu.\n\nGenerated keys are saved to `sd:/switch/prod.keys` and, when available, `sd:/switch/title.keys`.",
+    "binary": false
+  },
+  "changelog": "v2.0.1\n\nAdd Support to Firmware 23.0.0 and bump version to 2.0.1",
+  "assets": [
+    {
+      "url": "https://github.com/impeeza/Lockpick_RCMDecScots/releases/download/v2.0.1/Lockpick_RCM-2.0.1_Hekate.zip",
+      "type": "zip",
+      "zip": [
+        {
+          "path": "/**/*",
+          "dest": "/",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
+    }
+  ]
+}
