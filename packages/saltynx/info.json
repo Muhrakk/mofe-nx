@@ -2,10 +2,10 @@
  "title": "SaltyNX",
  "description": "Background process for the Nintendo Switch for file/code modification.",
  "author": "shinyquagsire23, masagrator",
- "version": "2.1.2",
+ "version": "2.1.3",
  "license": "",
  "url": "https://github.com/masagrator/SaltyNX/releases",
  "category": "advanced",
  "details": "SaltyNX is a background process for Nintendo Switch that enables runtime file and code modification in retail games.\n\nOriginally created by shinyquagsire23 and maintained as an expanded fork by masagrator, SaltyNX provides the underlying framework used by tools such as FPSLocker and other game-modification plugins.\n\nThis fork includes numerous quality-of-life, compatibility, performance-monitoring, display-control, and plugin-injection improvements.",
- "changelog": "2.1.2\n\nFix crash in very old NVN games that don't support nvnWindowGetCrop, f.e. Minecraft: Story Mode - The Complete Adventure."
+ "changelog": "2.1.3\n\nFix support for L\u00d6VE engine games that were broken when SaltyNX logo was enabled, this includes Balatro."
 }
