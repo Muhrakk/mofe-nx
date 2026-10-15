@@ -215,5 +215,12 @@
     "strip_v": true,
     "asset_regex": "^Lockpick_RCM-.*_Hekate\\.zip$",
     "asset_type": "zip"
+  },
+  "pipensx": {
+    "github": "i3sey/pipensx",
+    "pkgbuild": "packages/pipensx/pkgbuild.json",
+    "strip_v": true,
+    "asset_exact": "pipensx.nro",
+    "asset_type": "file"
   }
 }
