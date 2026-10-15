@@ -2,10 +2,10 @@
  "title": "Prelude",
  "description": "Switch between Nextendo Network and Nintendo's official network services.",
  "author": "Nextendo Network",
- "version": "3.5.17",
+ "version": "3.5.18",
  "license": "PolyForm Shield 1.0.0",
  "url": "https://github.com/NextendoNetwork/Prelude-Nextendo/releases",
  "category": "tool",
  "details": "Prelude is a Nintendo Switch homebrew application for switching an Atmosphere console between Nextendo Network and Nintendo's official network services.\n\nNextendo mode configures the Atmosphere files and patches needed to connect supported games and services to Nextendo Network. Nintendo mode removes Prelude's changes and restores the console's normal Nintendo network configuration.\n\nPrelude applies its changes through files and settings that Atmosphere reads at boot, making the process reversible. After selecting a network mode, the console reboots so the new configuration can take effect.",
- "changelog": "v3.5.17\n\n## Prelude v3.5.17\n\n**Fix: the \"System update required\" popup on firmware 22.5.0.**\n\nSince Oct 13, opening the eShop, the NSO applet or Link User showed *\"To continue, the console needs to be updated\"*. Before those web applets open, the console asks `bvc-hac-lp1.cdn.nintendo.net` (the browser version check) whether its firmware must update: **200 means \"update required\", 404 means fine**. On Oct 13 (01:00 UTC) Nintendo added 22.5.0 and 23.0.0 to that list. Prelude had no rule for that host, so the console asked Nintendo's real server, which also broke the rule that an emuMMC never talks to Nintendo.\n\n- Redirects `bvc-hac-lp1.cdn.nintendo.net` to Nextendo. The server answers 404, so 22.5.0 is no longer told to update.\n- Update, open Prelude once in Nextendo mode to rewrite the hosts, then **fully power off and restart** the console (the hosts file is only read at boot).\n- Confirmed on a real 22.5.0 console: the popup is gone in the eShop, the NSO applet and Link User.\n\nPlease **don't update to 23.0.x yet**: we have unconfirmed reports that `dns.mitm` doesn't work on 23.0.0 with the current Atmosph\u00e8re. Wait for an official release.\n\nFull changelog: https://github.com/NextendoNetwork/Prelude-Nextendo/compare/v3.5.16...v3.5.17"
+ "changelog": "v3.5.18\n\n**Full Changelog**: https://github.com/NextendoNetwork/Prelude-Nextendo/compare/v3.5.17...v3.5.18\n\nThis update brings the required patches for Metal Gear Solid: Peace Walker to work online for the US copy (only the JP copy worked), and also fixes the automatic updater."
 }
