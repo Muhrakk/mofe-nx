@@ -4,17 +4,17 @@
     "title": "Prelude",
     "author": "Nextendo Network",
     "category": "tool",
-    "version": "4.0.3",
+    "version": "4.0.4",
     "url": "https://github.com/NextendoNetwork/Prelude-Nextendo/releases",
     "license": "PolyForm Shield 1.0.0",
     "description": "Switch between Nextendo Network and Nintendo's official network services.",
     "details": "Prelude is a Nintendo Switch homebrew application for switching an Atmosphere console between Nextendo Network and Nintendo's official network services.\n\nNextendo mode configures the Atmosphere files and patches needed to connect supported games and services to Nextendo Network. Nintendo mode removes Prelude's changes and restores the console's normal Nintendo network configuration.\n\nPrelude applies its changes through files and settings that Atmosphere reads at boot, making the process reversible. After selecting a network mode, the console reboots so the new configuration can take effect.",
     "binary": "/switch/nextendo.nro"
   },
-  "changelog": "v4.0.3\n\n## Prelude v4.0.3 \u2014 fixes the Pok\u00e9mon Sword/Shield crash when connecting from Y-Comm\n\nOn console, pressing **+** in the Y-Comm to connect to the internet crashed **Pok\u00e9mon Sword** and **Pok\u00e9mon Shield** (1.3.2) with error **2124-0400**.\n\nThe game asks the console what kind of Nintendo Switch Online membership the user has, and closes itself if that check fails. Prelude already works around the same check for Pok\u00e9mon Scarlet/Violet, Legends: Z-A and Minecraft Dungeons II; this release adds the same small patch for Sword and Shield (`pkmnswsh-nextendo/`).\n\n### What you need to do\n1. Update Prelude.\n2. Open Prelude and select **Nextendo** mode again so the new patch is copied to your SD card.\n3. Restart the console, then start the game.\n\n### Who needs this\nAnyone playing Pok\u00e9mon Sword or Shield **1.3.2** online on a console. Emulator players are not affected.\n\n### Tested\nThe crash and its cause were confirmed from an Atmosph\u00e8re crash report (Shield 1.3.2). The patched build has not been tested on a console yet.\n\n**Full Changelog**: https://github.com/NextendoNetwork/Prelude-Nextendo/compare/v4.0.2...v4.0.3",
+  "changelog": "v4.0.4\n\n## Prelude v4.0.4\n\nSome bugs were fixed.\n\n### Install\nDownload `nextendo.nro` below and replace `/switch/nextendo.nro` on your SD card, or update from Prelude itself.",
   "assets": [
     {
-      "url": "https://github.com/NextendoNetwork/Prelude-Nextendo/releases/download/v4.0.3/nextendo.nro",
+      "url": "https://github.com/NextendoNetwork/Prelude-Nextendo/releases/download/v4.0.4/nextendo.nro",
       "dest": "/switch/nextendo.nro",
       "type": "update"
     },
