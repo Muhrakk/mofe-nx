@@ -6,6 +6,6 @@
  "license": "BSD-3-Clause",
  "url": "https://github.com/exelix11/dvr-patches/releases",
  "category": "advanced",
- "details": "SysDVR Patches contains firmware-specific Atmosphere ExeFS patches that relax Nintendo Switch recording restrictions for use with SysDVR.\n\nThe patches make more games behave as if recording is enabled, remove several capture restrictions, and help prevent crashes when recording-memory allocation fails.\n\nThese patches are tied to specific firmware versions. Installing patches intended for a different firmware may cause crashes or prevent affected system modules from loading.",
+ "details": "SysDVR Patches contains firmware-specific Atmosphere ExeFS patches that relax recording restrictions for use with SysDVR.\n\nThe patches make more games behave as if recording is enabled, remove several capture restrictions, and help prevent crashes when recording-memory allocation fails.\n\nThese patches are tied to specific firmware versions. Installing patches intended for a different firmware may cause crashes or prevent affected system modules from loading.",
  "changelog": "fw-23.0.1"
 }

@@ -6,6 +6,6 @@
  "license": "GPLv2",
  "url": "https://github.com/masagrator/FPSLocker/releases",
  "category": "tool",
- "details": "FPSLocker is an overlay that works with SaltyNX to set custom FPS targets and display refresh rates in Nintendo Switch games.\n\nIt supports game-specific patches for titles that need additional modifications to exceed their normal frame rate limits, along with handheld and docked refresh-rate control, display synchronization, buffering options, and automatic config downloads from the FPSLocker Warehouse.\n\nRequires SaltyNX and sys-dock.",
+ "details": "FPSLocker is an overlay that works with SaltyNX to set custom FPS targets and display refresh rates.\n\nIt supports game-specific patches for titles that need additional modifications to exceed their normal frame rate limits, along with handheld and docked refresh-rate control, display synchronization, buffering options, and automatic config downloads from the FPSLocker Warehouse.\n\nRequires SaltyNX and sys-dock.",
  "changelog": "3.5.0\n\n- Add support for triple buffer workaround targeting double buffer games - introduced in SaltyNX 2.1.0.\n  - For list of tested games, check README."
 }

@@ -1,11 +1,11 @@
 {
  "title": "nso-icon-tool",
- "description": "Create and apply custom Nintendo Switch user icons.",
+ "description": "Create and apply custom user icons.",
  "author": "dslatt",
  "version": "0.4.5",
  "license": "GPLv3",
  "url": "https://github.com/dslatt/nso-icon-tool/releases",
  "category": "tool",
- "details": "nso-icon-tool lets you create and apply custom Nintendo Switch user icons using Nintendo Switch Online icon elements or your own images.\n\nThe application can download an NSO icon cache containing available frames, characters, and backgrounds, which can then be combined into custom profile icons. Custom PNG and JPG images can also be loaded from `sd:/avatars/` and applied directly.",
+ "details": "nso-icon-tool lets you create and apply custom user icons using Nintendo Switch Online icon elements or your own images.\n\nThe application can download an NSO icon cache containing available frames, characters, and backgrounds, which can then be combined into custom profile icons. Custom PNG and JPG images can also be loaded from `sd:/avatars/` and applied directly.\n\n Use at your own risk. If Nintendo's services detect that you have a custom icon, you will be banned.",
  "changelog": "v0.4.5\n\n## Changes\n* Recompiled for fw21+ in https://github.com/dslatt/nso-icon-tool/pull/31\n\n\n**Full Changelog**: https://github.com/dslatt/nso-icon-tool/compare/v0.4.4...v0.4.5"
 }

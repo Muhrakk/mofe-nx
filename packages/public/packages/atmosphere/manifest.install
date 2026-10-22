@@ -1,0 +1,13 @@
+U: hbmenu.nro
+U: switch/reboot_to_payload.nro
+U: switch/haze.nro
+U: switch/daybreak.nro
+U: atmosphere/stratosphere.romfs
+U: atmosphere/reboot_payload.bin
+U: atmosphere/package3
+U: atmosphere/hbl.nsp
+U: atmosphere/config_templates/system_settings.ini
+U: atmosphere/config_templates/stratosphere.ini
+U: atmosphere/config_templates/override_config.ini
+U: atmosphere/config_templates/exosphere.ini
+U: atmosphere/hbl_html/accessible-urls/accessible-urls.txt

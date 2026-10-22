@@ -1,0 +1,11 @@
+{
+ "title": "Switch Frame Tap",
+ "description": "Stream gameplay and audio to a PC without a capture card.",
+ "author": "TomasUribe",
+ "version": "0.7.13.2",
+ "license": "GPLv3",
+ "url": "https://github.com/TomasUribe/switch-frame-tap",
+ "category": "tool",
+ "details": "Switch Frame Tap is a sysmodule for streaming gameplay and audio to a PC over USB or the network. It uses the H.264 encoder and supports up to 1080p60fps where available.\n\nIt supports native-resolution screenshots, recording through the PC viewer, network streaming, and USB webcam mode.\n\nA reboot is required after installation or updating so the sysmodule can restart.",
+ "changelog": "v0.7.13.2\n\nA one-file fix on top of v0.7.13.1:\n\n- **Sound in games that block recording, on firmware 23.0 and 23.0.1.** The bundled patches (exelix11's dvr-patches) had no file for firmware 23's system, so \"Sound in no-record games\" did nothing there (Smash Ultimate, Octopath Traveler had no sound). The 19th patch from dvr-patches' fw-23.0.1 release, which covers both 23.0 and 23.0.1, is now included. Thanks to the reporter of #29 for tracking it down (#28 too).\n\nNothing else changed: the Switch side is v0.7.13.1 plus this file. The viewers are unchanged.\n\n**Installing:** unzip `switch-frame-tap-0.7.13.2-switch.zip` over the SD card root and reboot (settings are kept). If \"Sound in no-record games\" is on, the new file is copied in during that first boot and works from the next one, so reboot once more.\n\n---\n<sub>Switch Frame Tap is free and open source. If you would like to support it: [buymeacoffee.com/papux200](https://buymeacoffee.com/papux200)</sub>"
+}
