@@ -222,5 +222,36 @@
     "strip_v": true,
     "asset_exact": "pipensx.nro",
     "asset_type": "file"
+  },
+  "switch-frame-tap": {
+    "github": "TomasUribe/switch-frame-tap",
+    "pkgbuild": "packages/switch-frame-tap/pkgbuild.json",
+    "strip_v": true,
+    "asset_regex": "^switch-frame-tap-.*-switch\\.zip$",
+    "asset_type": "zip",
+    "expected_files": [
+      "switch/switch-frame-tap/switch-frame-tap.nro",
+      "switch/.overlays/switch-frame-tap.ovl"
+    ]
+  },
+  "hekate": {
+    "github": "CTCaer/hekate",
+    "pkgbuild": "packages/hekate/pkgbuild.json",
+    "strip_v": true,
+    "asset_regex": "^hekate_ctcaer_.*_Nyx_.*\\.zip$",
+    "asset_type": "zip",
+    "expected_files": [
+      "bootloader/update.bin"
+    ]
+  },
+  "atmosphere": {
+    "github": "Atmosphere-NX/Atmosphere",
+    "pkgbuild": "packages/atmosphere/pkgbuild.json",
+    "strip_v": false,
+    "asset_regex": "^atmosphere-.*\\.zip$",
+    "asset_type": "zip",
+    "expected_files": [
+      "atmosphere/package3"
+    ]
   }
 }

@@ -1,0 +1,32 @@
+{
+  "package": "hekate",
+  "info": {
+    "title": "Hekate",
+    "author": "CTCaer",
+    "category": "tool",
+    "version": "6.5.4",
+    "url": "https://github.com/CTCaer/hekate",
+    "license": "GPLv2",
+    "description": "Custom bootloader and multipurpose recovery environment.",
+    "details": "Hekate is a custom bootloader and recovery environment. It provides CFW launching, emuMMC management, SD partitioning and USB mass storage, payload launching, NAND tools, hardware information, and the Nyx graphical interface.",
+    "binary": false
+  },
+  "changelog": "v6.5.4\n\n![hekate-nyx-banner](https://user-images.githubusercontent.com/3665130/60391760-bc1e8c00-9afe-11e9-8b7a-b065873081b2.png)\n\n**Supports booting ALL current CFWs, Android, Linux and payload tools.**\n**No more SD card removals**\n\n### Latest HOS supported: 23.0.1\n\n\n**Updated zip 2026/9/28 15:30 UTC:  fixed an issue with sleep** \n\n\nhekate v6.5.4 changes\n-------------\n- **HOS 23.0.1 support**\n\n\nemuMMC Changes\n-------------\n- **HOS 23.0.1 support**\nAs always based on https://github.com/m4xw/emuMMC\n\n\n\nNyx v1.9.4 changes\n-------------\n- **HOS 23.0.1 support**\n\nFAQ\n-------------\n\n<details>\n    <summary>Click to expand FAQ notes</summary>\n\n- **Which Linux/Android distributions are supported in Partition Manager?**\n For L4T Linux you can use the official Ubuntu Bionic 3.4.0 and newer or any other supported distro.\n For android you can get Android 11 (legacy) or 13/14 (dynamic) or newer.\n\n- **I don't care about emuMMC/Linux/Android. Can the Part manager be used for something else?**\n Yes. You can still reformat your SD card to a single FAT32 partition.\n You can even use it when you have exFAT and you want to format to FAT32.\n It is also suggested to format your sd card via hekate. That's because it prepares it for **performance**. something that many partitioning tools neglect.\n</details>\n\n\n\nNotes\n-------------\n\nCheck [readme.md](./README.md) for more.\n\n**NOTE:**\nFor maximum performance of UMS in Windows, you need to run `nyx_usb_max_rate__run_only_once_per_windows_pc.reg`, only once per PC you have.\nIt only affects hekate's usb device. You can also view that file with text editor and see what it does. Linux/Mac OS users do not need that.\n\n# How to update:\n- Drag n drop `bootloader` folder into sd card root and hit merge/replace.\n **No need to delete that folder first**, especially if you want your configs and payloads.\n- You can choose to update your RCM injection device or PC with the new `hekate_ctcaer_x.x.x.bin` or not.\n  In any case, `bootloader/update.bin`, will be checked and if newer it will get loaded.\n  `update.bin` is hekate and it is already copied with the `bootloader` folder drag n drop update process.\n\n\n# Download:",
+  "assets": [
+    {
+      "url": "https://github.com/CTCaer/hekate/releases/download/v6.5.4/hekate_ctcaer_6.5.4_Nyx_1.9.4.zip",
+      "type": "zip",
+      "zip": [
+        {
+          "path": "/bootloader/**/*",
+          "dest": "/bootloader",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "type": "icon",
+      "url": "icon.png"
+    }
+  ]
+}

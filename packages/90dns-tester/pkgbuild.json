@@ -8,7 +8,7 @@
     "url": "https://github.com/meganukebmp/Switch_90DNS_tester/releases",
     "license": "GPLv2",
     "description": "Test whether Nintendo network services are blocked.",
-    "details": "90DNS Tester checks network connectivity from your Nintendo Switch to determine whether Nintendo services are being successfully blocked.\n\nIt is useful for verifying 90DNS-style DNS configurations and other network setups intended to prevent connections to Nintendo's servers while retaining general internet access.",
+    "details": "90DNS Tester checks network connectivity to determine whether Nintendo services are being successfully blocked.\n\nUseful for verifying 90DNS-style DNS configurations and other network setups intended to prevent connections to Nintendo's servers while retaining general internet access.",
     "binary": "/switch/Switch_90DNS_tester.nro"
   },
   "changelog": "v1.1.0\n\nThis update builds against the latest libnx so it should now run on the newest atmosphere. Additionally console printing issues were resolved thanks to @drizzt",

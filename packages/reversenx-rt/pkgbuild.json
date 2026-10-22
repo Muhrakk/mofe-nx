@@ -8,7 +8,7 @@
     "url": "https://github.com/ppkantorski/ReverseNX-RT/releases",
     "license": "MIT",
     "description": "Switch between handheld and docked modes in real time.",
-    "details": "ReverseNX-RT is an Ultrahand overlay that lets you switch compatible Nintendo Switch games between handheld and docked rendering modes in real time.\n\nIt is useful for forcing a game's handheld or docked graphics profile without rebooting the console or restarting the game, allowing you to compare image quality, resolution, performance, and power behavior on the fly.\n\nThis build is maintained by ppkantorski and rebuilt with libultrahand for integration with the modern Ultrahand overlay ecosystem.",
+    "details": "ReverseNX-RT is an Ultrahand overlay that lets you switch compatible games between handheld and docked rendering modes in real time.\n\nUseful for forcing a game's handheld or docked graphics profile without rebooting the console or restarting the game, allowing you to compare image quality, resolution, performance, and power behavior on the fly.",
     "binary": false
   },
   "changelog": "2.2.1+r1\n\nCompilation with latest `libultrahand` (v2.5.2).\n\n## **List of Changes**\n- Various text alignment corrections.\n\n**Full Changelog**: https://github.com/ppkantorski/ReverseNX-RT/compare/2.2.1+...2.2.1+r1",

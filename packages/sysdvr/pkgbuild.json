@@ -7,8 +7,8 @@
     "version": "6.3",
     "url": "https://github.com/exelix11/SysDVR/releases",
     "license": "GPLv2",
-    "description": "Stream Nintendo Switch gameplay over USB or network.",
-    "details": "SysDVR is a Nintendo Switch sysmodule for streaming gameplay capture over USB or a local network.\n\nThe full SysDVR package supports both network and USB streaming and includes the SysDVR Settings homebrew application for changing streaming modes and configuration.\n\nSysDVR runs in the background as an Atmosphere sysmodule and can be started or stopped when needed to reduce sysmodule memory usage.",
+    "description": "Stream gameplay over USB or network.",
+    "details": "SysDVR is a sysmodule for streaming gameplay capture over USB or a local network.\n\nThe full package supports both network and USB streaming and includes the SysDVR Settings homebrew application for changing streaming modes and configuration.\n\nSysDVR runs in the background as a sysmodule and can be started or stopped when needed to reduce sysmodule memory usage.",
     "binary": false
   },
   "changelog": "v6.3\n\nChanges:\n- Fix a service initialization issue that when combined with ldn_mitm would cause the system settings to crash. Now SysDVR should work alongside ldn_mitm without issues. #295\n- Support AAC codec for video recording. Recorded clips can now be played on Windows without needing additional conversion steps.\n- Reintroduce support for the `--file` command line option to record clips from the command line\n- Remember the last used IP address when starting a manual network connection #364",

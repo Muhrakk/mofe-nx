@@ -7,8 +7,8 @@
     "version": "0.2.1",
     "url": "https://github.com/masagrator/Status-Monitor-Deux/releases",
     "license": "GPLv2",
-    "description": "Monitor Nintendo Switch hardware statistics in real time.",
-    "details": "Status Monitor Deux is the next generation of Status Monitor Overlay for Nintendo Switch.\n\nIt displays real-time hardware statistics such as per-core CPU usage, GPU load, CPU/GPU/RAM frequencies, memory usage, temperatures, and fan behavior through an overlay interface.\n\nUnlike the original Status Monitor Overlay, Status Monitor Deux uses customizable `.smd` script files for its display modes and `.smse` extension files for additional services, giving you much more control over how information is presented.\n\nIts configuration, modes, extensions, and localization files are stored under `sd:/config/status-monitor-deux`.",
+    "description": "Monitor hardware statistics in real time.",
+    "details": "Status Monitor Deux displays real-time hardware statistics such as per-core CPU usage, GPU load, CPU/GPU/RAM frequencies, memory usage, temperatures, and fan behavior through an overlay interface.\n\nIt uses customizable `.smd` script files for its display modes and `.smse` extension files for additional services, giving you much more control over how information is presented.\n\nIts configuration, modes, extensions, and localization files are stored under `sd:/config/status-monitor-deux`.",
     "binary": false
   },
   "changelog": "0.2.1\n\n- Fix an issue with sys-clk service by introducing \"struct\" out type into smse parser\n- Fix screen tearing\n- Fix calculating deltas in Full mode\n- Fix showing delta signs in Micro mode\n- Fix memory space usage positioning in Micro mode when hoc-clk or sys-clk is active",
