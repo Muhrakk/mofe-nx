@@ -4,6 +4,8 @@ import os
 import re
 import sys
 import urllib.request
+import urllib.error
+import time
 import zipfile
 from pathlib import Path
 
@@ -19,9 +21,12 @@ def set_output(name, value):
         with open(output_file, "a", encoding="utf-8") as f:
             f.write(f"{name}={value}\n")
 
+class TemporaryGitHubError(Exception):
+    """A GitHub/API failure that should not abort the entire updater."""
+    pass
 
-def github_request(url):
-    """Download data from GitHub using the built-in Actions token when available."""
+def github_request(url, allow_missing_latest=False, retries=3):
+    """Download data from GitHub, retrying transient API/network failures."""
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "MoFe-NX-Updater",
@@ -34,8 +39,57 @@ def github_request(url):
 
     request = urllib.request.Request(url, headers=headers)
 
-    with urllib.request.urlopen(request, timeout=60) as response:
-        return response.read()
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                return response.read()
+
+        except urllib.error.HTTPError as exc:
+            transient = (
+                exc.code in (403, 429)
+                or 500 <= exc.code <= 599
+                or (
+                    exc.code == 404
+                    and allow_missing_latest
+                    and url.endswith("/releases/latest")
+                )
+            )
+
+            if not transient:
+                raise
+
+            print(
+                f"  GitHub returned HTTP {exc.code} "
+                f"(attempt {attempt}/{retries})."
+            )
+
+            if attempt < retries:
+                delay = attempt * 5
+                print(f"  Retrying in {delay} seconds...")
+                time.sleep(delay)
+                continue
+
+            raise TemporaryGitHubError(
+                f"GitHub remained unavailable after {retries} attempts "
+                f"(HTTP {exc.code})"
+            ) from exc
+
+        except urllib.error.URLError as exc:
+            print(
+                f"  GitHub/network request failed "
+                f"(attempt {attempt}/{retries}): {exc.reason}"
+            )
+
+            if attempt < retries:
+                delay = attempt * 5
+                print(f"  Retrying in {delay} seconds...")
+                time.sleep(delay)
+                continue
+
+            raise TemporaryGitHubError(
+                f"GitHub/network request failed after {retries} attempts: "
+                f"{exc.reason}"
+            ) from exc
 
 
 def normalise_version(tag, strip_v):
@@ -134,7 +188,9 @@ def update_package(name, package):
     print(f"Checking {name}: {repo}")
     print("=" * 64)
 
-    release = json.loads(github_request(api_url))
+    release = json.loads(
+    github_request(api_url, allow_missing_latest=True)
+    )
 
     release_tag = str(release["tag_name"])
     latest_version = normalise_version(
@@ -236,6 +292,12 @@ def main():
         try:
             if update_package(name, package):
                 changed_packages.append(name)
+
+        except TemporaryGitHubError as exc:
+            print()
+            print(f"WARNING while checking {name}: {exc}")
+            print("Skipping this package and continuing.")
+            continue
 
         except Exception as exc:
             print()
