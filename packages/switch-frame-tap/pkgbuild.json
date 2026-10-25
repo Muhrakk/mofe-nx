@@ -4,17 +4,17 @@
     "title": "Switch Frame Tap",
     "author": "TomasUribe",
     "category": "tool",
-    "version": "0.7.18.1",
+    "version": "0.7.19",
     "url": "https://github.com/TomasUribe/switch-frame-tap",
     "license": "GPLv3",
     "description": "Stream gameplay and audio to a PC without a capture card.",
     "details": "Switch Frame Tap is a sysmodule for streaming gameplay and audio to a PC over USB or the network. It uses the H.264 encoder and supports up to 1080p60fps where available.\n\nIt supports native-resolution screenshots, recording through the PC viewer, network streaming, and USB webcam mode.\n\nA reboot is required after installation or updating so the sysmodule can restart.",
     "binary": "/switch/switch-frame-tap/switch-frame-tap.nro"
   },
-  "changelog": "v0.7.18.1\n\n**v0.7.18.1: homebrew docked mode from forwarders**\n\n- **Homebrew in docked mode (beta) now works from forwarders too.** Homebrew started from a forwarder on the HOME menu (an installed homebrew title with its own title id, as sphaira makes them) is told the console is docked, like homebrew started by holding R over a game - so SDL2 ports and emulators draw and stream at 1080p. Forwarders run with a game's memory, so 1080p fits. Forwarders with a Nintendo-style 0100... title id look like games and are left alone; homebrew opened from the Album stays as it is (too little memory there for 1080p).\n\n**Updating:** open the Switch app's **Updates** page (or unzip `switch-frame-tap-0.7.18.1-switch.zip` over the SD card root) and restart the console. Settings are kept. The PC viewers and the Android app offer the update when they open.\n\n---\n<sub>Switch Frame Tap is free and open source. If you would like to support it: [buymeacoffee.com/papux200](https://buymeacoffee.com/papux200)</sub>",
+  "changelog": "v0.7.19\n\n**v0.7.19: apps that refuse to be streamed are skipped, and one-file recording becomes a choice**\n\n- **Apps that close themselves when streamed are skipped (#31).** Some apps - TiCo's protected builds, for one - shut down when the stream attaches. Switch Frame Tap now notices that and leaves the app alone from then on, so it starts normally next time (without the stream). Turn **Stream this app** on in the overlay to try again.\n- **One-file recording is an option now, off by default.** Recordings work as before 0.7.18 again: never scaled, and a new file starts when the picture size changes (docked/handheld, the HOME menu). Turn on **One file per recording** (PC viewer: Settings \u2192 Recording; Android: Capture) to keep the size the recording started at in one file instead (#44).\n- **Smoother scaling in one-file recordings.** When a recording has to enlarge a smaller picture (the HOME menu in a 1080p recording), it is no longer blocky - and needs about half the bitrate.\n- **Games above 1080p (#48)** show \"This game draws above 1080p\" in the viewer instead of the stream retrying every few seconds. Switch Frame Tap streams up to 1920x1080.\n- **Project Diva Mega Mix (#43):** once a game's still background is recognized, it is remembered until the console restarts, not just until the game closes.\n- **Recordings** no longer leave an empty 0-second file when the picture size changes right as they start (PC viewer and Android app).\n\n**Updating:** open the Switch app's **Updates** page (or unzip `switch-frame-tap-0.7.19-switch.zip` over the SD card root) and restart the console. Settings are kept. The PC viewers and the Android app offer the update when they open.\n\n---\n<sub>Switch Frame Tap is free and open source. If you would like to support it: [buymeacoffee.com/papux200](https://buymeacoffee.com/papux200)</sub>",
   "assets": [
     {
-      "url": "https://github.com/TomasUribe/switch-frame-tap/releases/download/v0.7.18.1/switch-frame-tap-0.7.18.1-switch.zip",
+      "url": "https://github.com/TomasUribe/switch-frame-tap/releases/download/v0.7.19/switch-frame-tap-0.7.19-switch.zip",
       "type": "zip",
       "zip": [
         {
