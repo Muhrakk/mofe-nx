@@ -4,17 +4,17 @@
     "title": "FPSLocker",
     "author": "masagrator",
     "category": "tool",
-    "version": "3.5.0",
+    "version": "3.5.1",
     "url": "https://github.com/masagrator/FPSLocker/releases",
     "license": "GPLv2",
     "description": "An overlay that allows users to set custom FPS targets in retail games.",
     "details": "FPSLocker is an overlay that works with SaltyNX to set custom FPS targets and display refresh rates.\n\nIt supports game-specific patches for titles that need additional modifications to exceed their normal frame rate limits, along with handheld and docked refresh-rate control, display synchronization, buffering options, and automatic config downloads from the FPSLocker Warehouse.\n\nRequires SaltyNX and sys-dock.",
     "binary": false
   },
-  "changelog": "3.5.0\n\n- Add support for triple buffer workaround targeting double buffer games - introduced in SaltyNX 2.1.0.\n  - For list of tested games, check README.",
+  "changelog": "3.5.1\n\n- Fix bugs in config to patch converter\n- Reduce footprint of parsing config",
   "assets": [
     {
-      "url": "https://github.com/masagrator/FPSLocker/releases/download/3.5.0/FPSLocker.ovl",
+      "url": "https://github.com/masagrator/FPSLocker/releases/download/3.5.1/FPSLocker.ovl",
       "dest": "/switch/.overlays/FPSLocker.ovl",
       "type": "update"
     },
