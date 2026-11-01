@@ -4,17 +4,17 @@
     "title": "Sphaira",
     "author": "NaGaa95, ITotalJustice",
     "category": "tool",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "url": "https://github.com/NaGaa95/sphaira/releases",
     "license": "GPLv3",
     "description": "A feature-rich homebrew menu.",
     "details": "Sphaira is a modern homebrew menu and file-management environment.\n\nIt includes a homebrew launcher, file browser, game and application management, install support, MTP and FTP functionality, App Store integration, forwarder creation, theme support, and a wide range of utility features.\n\nThis package installs Sphaira to `sd:/switch/sphaira/sphaira.nro`.",
     "binary": "/switch/sphaira/sphaira.nro"
   },
-  "changelog": "1.0.8\n\n# Sphaira 1.0.8\n\nAdded Ownfoil support. ([#379](https://github.com/NaGaa95/sphaira/pull/379), @a1ex4)\nAdded an album menu with QR-code web sharing. ([#377](https://github.com/NaGaa95/sphaira/pull/377), @Insektaure)\nAdded 32-bit address-space options to forwarder. ([#375](https://github.com/NaGaa95/sphaira/pull/375), @danfromtico)\nChanged game controls: A views content; Y launches with confirmation.\nImproved Chinese and Russian translations. ([#373](https://github.com/NaGaa95/sphaira/pull/373), @R-YaTian; [#380](https://github.com/NaGaa95/sphaira/pull/380), @AlgorithmLX)",
+  "changelog": "1.0.9\n\n# Sphaira 1.0.9\n\nAdded Ownfoil install queue with background installs. ([#398](https://github.com/NaGaa95/sphaira/pull/398), @exorcito)\nAdded game archiving. ([#385](https://github.com/NaGaa95/sphaira/pull/385), @Insektaure)\nAdded per-game launch language selection. ([#405](https://github.com/NaGaa95/sphaira/pull/405), @NorahStudio)\nAdded Turkish and improved French and Italian translations. ([#406](https://github.com/NaGaa95/sphaira/pull/406), @batuhanmeral; [#402](https://github.com/NaGaa95/sphaira/pull/402), @ThatIsAPseudo; [#395](https://github.com/NaGaa95/sphaira/pull/395), @sgrontflix)\nFixed save restoration, including backups wrapped in a folder. ([#387](https://github.com/NaGaa95/sphaira/pull/387), @strongt1me)\nFixed Themezer downloads and empty searches. ([#388](https://github.com/NaGaa95/sphaira/pull/388), @strongt1me)\nFixed WebDAV folder listings. ([#394](https://github.com/NaGaa95/sphaira/pull/394), @zhangyoufu)\nFixed MTP transfer hangs on certain file sizes. ([#408](https://github.com/NaGaa95/sphaira/pull/408), @strongt1me, @Cardas26)\nImproved USB, file operation and game export error messages. ([#387](https://github.com/NaGaa95/sphaira/pull/387), [#392](https://github.com/NaGaa95/sphaira/pull/392), [#400](https://github.com/NaGaa95/sphaira/pull/400), [#412](https://github.com/NaGaa95/sphaira/pull/412), @strongt1me)",
   "assets": [
     {
-      "url": "https://github.com/NaGaa95/sphaira/releases/download/1.0.8/sphaira.zip",
+      "url": "https://github.com/NaGaa95/sphaira/releases/download/1.0.9/sphaira.zip",
       "type": "zip",
       "zip": [
         {
