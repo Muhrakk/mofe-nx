@@ -4,17 +4,17 @@
     "title": "SaltyNX",
     "author": "shinyquagsire23, masagrator",
     "category": "advanced",
-    "version": "2.1.3",
+    "version": "2.1.4",
     "url": "https://github.com/masagrator/SaltyNX/releases",
     "license": "",
     "description": "Background process for file/code modification.",
     "details": "SaltyNX is a background process that enables runtime file and code modification in retail games.\n\nSaltyNX provides the underlying framework used by tools such as FPSLocker and other game-modification plugins.",
     "binary": false
   },
-  "changelog": "2.1.3\n\nFix support for L\u00d6VE engine games that were broken when SaltyNX logo was enabled, this includes Balatro.",
+  "changelog": "2.1.4\n\n- NVN games should boot now faster\n- Fix compatibility with OpenGL games that don't use uniform buffers for shaders (f.e. Dragon Quest Builders)\n- Fix compatibility with OpenGL games having small thread stack on swap thread (f.e. Dragon Quest Builders)\n- Fix compatibility with NVN games reserving 2GB for GPU use (Old Lego games)\n  - Old NVN games have offset stored as signed value so our new reservation was causing overflow in their case, Core now reserves buffer for shaders before game does it for GPU\n- Fix compatibility with games using `nn::diag::GetRequiredBufferSizeForGetAllModuleInfo()` manually that abort when output is 0 (f.e. Hitman Absolution 1.4_107768, older updates don't use it)\n- Increase size of NVNSampler to fit data expected by old and new NVN (code had size 0x30, old NVN used 0x60)",
   "assets": [
     {
-      "url": "https://github.com/masagrator/SaltyNX/releases/download/2.1.3/SaltyNX.zip",
+      "url": "https://github.com/masagrator/SaltyNX/releases/download/2.1.4/SaltyNX.zip",
       "type": "zip",
       "zip": [
         {
