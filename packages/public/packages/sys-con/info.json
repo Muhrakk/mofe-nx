@@ -2,10 +2,10 @@
  "title": "sys-con",
  "description": "Use USB controllers from other consoles on Nintendo Switch.",
  "author": "cathery, o0Zz",
- "version": "2.0.0",
+ "version": "2.1.0",
  "license": "MIT",
  "url": "https://github.com/o0Zz/sys-con/releases",
  "category": "tool",
  "details": "sys-con is a sysmodule that adds support for third-party USB controllers.\n\nIt supports a wide range of HID and XInput-compatible gamepads, including PlayStation, Xbox, PC controllers, arcade sticks, wheels, and other USB input devices. Controllers can be used in docked mode or through a compatible USB-C OTG adapter in handheld mode.\n\nConfiguration files under `sd:/config/sys-con/` allow you to customize button mappings, stick and trigger behavior, deadzones, polling settings, controller profiles, and other device-specific options.",
- "changelog": "2.0.0\n\n# Changelog\n - Implemented MITM mode\n - Added Rumble support\n - Added Gyro support\n - Added SInput support\n - Added support for UDP network controllers\n - Drastically reduced sys-con's RAM and ROM footprint\n\nThis release is a major update of sys-con, with a large portion of the codebase refactored and improved.\nBecause of the scale of these changes, this version may be less stable than previous releases. If stability is your priority, consider staying on v1.7.0 for now.\n\nSpecial thanks to @saad-script for their help with development and testing."
+ "changelog": "2.1.0\n\n# Changelog\n   - Added Xbox Wireless Adapter support (needs Microsoft's firmware, see the README). Thanks to @hagenbui\n   - Added USB keyboard and mouse support\n   - Added sideways single Joy-Con mode for games that only accept single Joy-Cons\n   - Reworked MITM mode, now the default. Fixes the freeze in Super Mario 3D All-Stars (#128)\n   - Fixed `discovery_mode`, stick direction bindings and the network pad's vertical axis                                                 \n   - Fixed several controller detection, sleep and config parsing issues\n\n  # Upgrading from 2.0.0\n  If you keep your own config.ini, flip the sign of any `lstick_up/down` or `rstick_up/down` bound to an axis (`lstick_up=+Y` becomes     \n  `lstick_up=-Y`)."
 }
