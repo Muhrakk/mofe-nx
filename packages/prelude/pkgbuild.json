@@ -4,17 +4,17 @@
     "title": "Prelude",
     "author": "Nextendo Network",
     "category": "tool",
-    "version": "4.0.18",
+    "version": "4.0.19",
     "url": "https://github.com/NextendoNetwork/Prelude-Nextendo/releases",
     "license": "PolyForm Shield 1.0.0",
     "description": "Switch between Nextendo Network and Nintendo's official network services.",
     "details": "Prelude is a homebrew application for switching between Nextendo Network and Nintendo's official network services.\n\nNextendo mode configures the Atmosphere files and patches needed to connect supported games and services to Nextendo Network. Nintendo mode removes Prelude's changes and restores the console's normal Nintendo network configuration.\n\nPrelude applies its changes through files and settings that Atmosphere reads at boot, making the process reversible. After selecting a network mode, the console reboots so the new configuration can take effect.",
     "binary": "/switch/nextendo.nro"
   },
-  "changelog": "v4.0.18\n\n## Sonic Racing: CrossWorlds\n\nSonic Racing: CrossWorlds can now go online on the Nextendo Network from a console.\n\n- SEGA's game API and CDN (`prod-api.sora-online.net`, `prod-cdn.sora-online.net`) now point to the Nextendo server.\n- Epic's TURN relay (`turn.rtcp.on.epicgames.com`) now points to the Nextendo TURN server, which hands out the\n  relay credentials races need when two players can't connect directly.\n- Epic Online Services sign-in, lobbies and messaging use the existing shared `api.epicgames.dev` entry.\n- No ExeFS patches are needed.\n\nWhat works online: SEGA (App) friends, Nintendo Switch friends who play the game, lobby invites, joining by\nLobby ID, Friend Match and matchmaking (including cancelling a search).\n\n## What you need to do\n\n1. Update Prelude to v4.0.18.\n2. **Select Nextendo mode again** after updating, so the new hosts lines are written.\n3. Make sure your console is linked to your Nextendo account. CrossWorlds signs you in with that account; an\n   unlinked console is refused.\n\n## Known issues\n\n- The hosts file is global under Nextendo mode, so the TURN line also sends other Epic Online Services games'\n  P2P relay traffic to the Nextendo TURN server. Direct connections are unaffected.\n- A console and an emulator player who are Nintendo Switch friends may not see each other as CrossWorlds\n  players in the Nintendo Switch Friends tab yet. SEGA friends, invites and Lobby IDs work across platforms.\n- Races can still drop right after the countdown when a player's frame rate is very low.",
+  "changelog": "v4.0.19\n\n**Full Changelog**: https://github.com/NextendoNetwork/Prelude-Nextendo/compare/v4.0.18...v4.0.19",
   "assets": [
     {
-      "url": "https://github.com/NextendoNetwork/Prelude-Nextendo/releases/download/v4.0.18/nextendo.nro",
+      "url": "https://github.com/NextendoNetwork/Prelude-Nextendo/releases/download/v4.0.19/nextendo.nro",
       "dest": "/switch/nextendo.nro",
       "type": "update"
     },
