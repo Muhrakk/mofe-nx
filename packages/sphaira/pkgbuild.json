@@ -4,17 +4,17 @@
     "title": "Sphaira",
     "author": "NaGaa95, ITotalJustice",
     "category": "tool",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "url": "https://github.com/NaGaa95/sphaira/releases",
     "license": "GPLv3",
     "description": "A feature-rich homebrew menu.",
     "details": "Sphaira is a modern homebrew menu and file-management environment.\n\nIt includes a homebrew launcher, file browser, game and application management, install support, MTP and FTP functionality, App Store integration, forwarder creation, theme support, and a wide range of utility features.\n\nThis package installs Sphaira to `sd:/switch/sphaira/sphaira.nro`.",
     "binary": "/switch/sphaira/sphaira.nro"
   },
-  "changelog": "1.0.9\n\n# Sphaira 1.0.9\n\nAdded Ownfoil install queue with background installs. ([#398](https://github.com/NaGaa95/sphaira/pull/398), @exorcito)\nAdded game archiving. ([#385](https://github.com/NaGaa95/sphaira/pull/385), @Insektaure)\nAdded per-game launch language selection. ([#405](https://github.com/NaGaa95/sphaira/pull/405), @NorahStudio)\nAdded Turkish and improved French and Italian translations. ([#406](https://github.com/NaGaa95/sphaira/pull/406), @batuhanmeral; [#402](https://github.com/NaGaa95/sphaira/pull/402), @ThatIsAPseudo; [#395](https://github.com/NaGaa95/sphaira/pull/395), @sgrontflix)\nFixed save restoration, including backups wrapped in a folder. ([#387](https://github.com/NaGaa95/sphaira/pull/387), @strongt1me)\nFixed Themezer downloads and empty searches. ([#388](https://github.com/NaGaa95/sphaira/pull/388), @strongt1me)\nFixed WebDAV folder listings. ([#394](https://github.com/NaGaa95/sphaira/pull/394), @zhangyoufu)\nFixed MTP transfer hangs on certain file sizes. ([#408](https://github.com/NaGaa95/sphaira/pull/408), @strongt1me, @Cardas26)\nImproved USB, file operation and game export error messages. ([#387](https://github.com/NaGaa95/sphaira/pull/387), [#392](https://github.com/NaGaa95/sphaira/pull/392), [#400](https://github.com/NaGaa95/sphaira/pull/400), [#412](https://github.com/NaGaa95/sphaira/pull/412), @strongt1me)",
+  "changelog": "1.1.0\n\n# Sphaira 1.1.0\n\n### Switch 2 :\n- Added Switch 2 support, running under kaiHEN.\n  - Installing, forwarders, Games, Game Card, Appstore, Themezer, IRS, USB and MTP are not available on Switch 2.\n\n### Switch :\n- Added an optional warning for homebrew built for an older ABI.\n- Added exporting the bins of Switch 2 (T2) game cards. ([#415](https://github.com/NaGaa95/sphaira/pull/415), @strongt1me)\n- Added the NCA key generations of firmware 21 to 23. ([#422](https://github.com/NaGaa95/sphaira/pull/422), @dragonflylee)\n- Added Hungarian and improved Italian translations. ([#437](https://github.com/NaGaa95/sphaira/pull/437), @Kobuhor; [#413](https://github.com/NaGaa95/sphaira/pull/413), @sgrontflix)\n- Fixed emuMMC being detected as active when it is disabled. ([#434](https://github.com/NaGaa95/sphaira/pull/434), @strongt1me)\n- Improved picking the language of game titles. ([#420](https://github.com/NaGaa95/sphaira/pull/420), @dragonflylee)\n- Added compile flags to leave out optional features. ([#441](https://github.com/NaGaa95/sphaira/pull/441), @dragonflylee)",
   "assets": [
     {
-      "url": "https://github.com/NaGaa95/sphaira/releases/download/1.0.9/sphaira.zip",
+      "url": "https://github.com/NaGaa95/sphaira/releases/download/1.1.0/sphaira.zip",
       "type": "zip",
       "zip": [
         {
