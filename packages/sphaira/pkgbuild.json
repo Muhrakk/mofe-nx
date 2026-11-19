@@ -4,17 +4,17 @@
     "title": "Sphaira",
     "author": "NaGaa95, ITotalJustice",
     "category": "tool",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "url": "https://github.com/NaGaa95/sphaira/releases",
     "license": "GPLv3",
     "description": "A feature-rich homebrew menu.",
     "details": "Sphaira is a modern homebrew menu and file-management environment.\n\nIt includes a homebrew launcher, file browser, game and application management, install support, MTP and FTP functionality, App Store integration, forwarder creation, theme support, and a wide range of utility features.\n\nThis package installs Sphaira to `sd:/switch/sphaira/sphaira.nro`.",
     "binary": "/switch/sphaira/sphaira.nro"
   },
-  "changelog": "1.1.0\n\n# Sphaira 1.1.0\n\n### Switch 2 :\n- Added Switch 2 support, running under kaiHEN.\n  - Installing, forwarders, Games, Game Card, Appstore, Themezer, IRS, USB and MTP are not available on Switch 2.\n\n### Switch :\n- Added an optional warning for homebrew built for an older ABI.\n- Added exporting the bins of Switch 2 (T2) game cards. ([#415](https://github.com/NaGaa95/sphaira/pull/415), @strongt1me)\n- Added the NCA key generations of firmware 21 to 23. ([#422](https://github.com/NaGaa95/sphaira/pull/422), @dragonflylee)\n- Added Hungarian and improved Italian translations. ([#437](https://github.com/NaGaa95/sphaira/pull/437), @Kobuhor; [#413](https://github.com/NaGaa95/sphaira/pull/413), @sgrontflix)\n- Fixed emuMMC being detected as active when it is disabled. ([#434](https://github.com/NaGaa95/sphaira/pull/434), @strongt1me)\n- Improved picking the language of game titles. ([#420](https://github.com/NaGaa95/sphaira/pull/420), @dragonflylee)\n- Added compile flags to leave out optional features. ([#441](https://github.com/NaGaa95/sphaira/pull/441), @dragonflylee)",
+  "changelog": "1.1.1\n\n# Sphaira 1.1.1\n\n### Switch 2 :\n- Added MTP support.\n- Added Appstore with [Brewstore](https://github.com/HerXayah/brewstore)'s catalog.\n- Added the album back to FTP and MTP.\n\n### Switch :\n- The homebrew menu now refreshes when an .nro is copied, deleted or renamed over MTP (also on Switch 2).\n- Fixed missing display version in NSP names for updates exported from the game card. ([#445](https://github.com/NaGaa95/sphaira/pull/445), @strongt1me)\n- Compacted the file viewer's text list. ([#449](https://github.com/NaGaa95/sphaira/pull/449), @dragonflylee)",
   "assets": [
     {
-      "url": "https://github.com/NaGaa95/sphaira/releases/download/1.1.0/sphaira.zip",
+      "url": "https://github.com/NaGaa95/sphaira/releases/download/1.1.1/sphaira.zip",
       "type": "zip",
       "zip": [
         {
