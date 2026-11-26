@@ -4,17 +4,17 @@
     "title": "sys-con",
     "author": "cathery, o0Zz",
     "category": "tool",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "url": "https://github.com/o0Zz/sys-con/releases",
     "license": "MIT",
     "description": "Use USB controllers from other consoles on Nintendo Switch.",
     "details": "sys-con is a sysmodule that adds support for third-party USB controllers.\n\nIt supports a wide range of HID and XInput-compatible gamepads, including PlayStation, Xbox, PC controllers, arcade sticks, wheels, and other USB input devices. Controllers can be used in docked mode or through a compatible USB-C OTG adapter in handheld mode.\n\nConfiguration files under `sd:/config/sys-con/` allow you to customize button mappings, stick and trigger behavior, deadzones, polling settings, controller profiles, and other device-specific options.",
     "binary": false
   },
-  "changelog": "2.1.1\n\n# Changelog\n- Fixed Xbox 360 Wireless Receiver: paired controllers never connected (#133)\n- Official Nintendo controllers are now left to the console by default (new `discovery_exclude_vidpid=057e-*`), fixes the Pro Controller disconnecting over USB (#54)\n- Added Logitech RumblePad 2 mapping",
+  "changelog": "2.1.2\n\n## ChangeLog\n- Fix sys-con stopping when two USB controllers are plugged at the same time (#134)",
   "assets": [
     {
-      "url": "https://github.com/o0Zz/sys-con/releases/download/2.1.1/sys-con-2.1.1.zip",
+      "url": "https://github.com/o0Zz/sys-con/releases/download/2.1.2/sys-con-2.1.2.zip",
       "type": "zip",
       "zip": [
         {
